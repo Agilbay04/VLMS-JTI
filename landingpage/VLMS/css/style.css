@@ -407,6 +407,27 @@ ul{
     font-weight: 300;
 }
 
+/* Tentang Detail */
+.tentang-detail{
+	background-color: #ffffff;
+}
+
+.tentang-detail img{
+	max-width: 800px;
+	width: 100%;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 35px;
+	transition: all 0.5s ease;
+}
+
+.tentang-detail img:hover{
+	margin-left: 10px;
+}
+
+.tentang-detail .tentang-text{
+	margin-top: 30px;
+}
+
 /* Vlms */
 .vlms{
     background-color: var(--black-100);
