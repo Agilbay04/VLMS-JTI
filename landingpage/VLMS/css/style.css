@@ -342,7 +342,7 @@ ul{
     width: 100%;
     box-shadow: var(--shadow-black-100);
     border-radius: 35px;
-    animation: bounceTop_01 3s ease infinite;
+    /* animation: bounceTop_01 3s ease infinite; */
 }   
 
 .home-img{
