@@ -34,9 +34,9 @@ $(document).ready(function() {
     });
 
     /** Navbar Collapse */
-    $(".nav-link").on("click", function(){
-        $(".navbar-collapse").collapse("hide");
-    });
+    // $(".nav-link").on("click", function(){
+    //     $(".navbar-collapse").collapse("hide");
+    // });
 });
 
 
