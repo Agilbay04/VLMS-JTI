@@ -29,19 +29,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link active" href="#">Beranda <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="#" data-scroll-nav="0">Beranda <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/tentang.html">Tentang</a>
+            <a class="nav-link" href="#" data-scroll-nav="1">Tentang</a>
+          </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-scroll-nav="2">Profil</a>
+					</li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-scroll-nav="3">VLMS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/vlms.html">VLMS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/profil.html">Profil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/projek.html">Projek</a>
+            <a class="nav-link" href="#" data-scroll-nav="4">Projek</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,18 +50,18 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Jurnal ilmiah & E-book</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Produk & Aplikasi</a>
+              <a class="dropdown-item" href="#" data-scroll-nav="5">Produk & Aplikasi</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Penghargaan</a>
+              <a class="dropdown-item" href="#" data-scroll-nav="6">Penghargaan</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Foto Kegiatan</a>
+              <a class="dropdown-item" href="#" data-scroll-nav="7">Foto Kegiatan</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/faq.html">FAQ</a>
+            <a class="nav-link" href="#" data-scroll-nav="8">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="5">Kontak</a>
+            <a class="nav-link" href="#" data-scroll-nav="9">Kontak</a>
           </li>
           <li class="nav-item">
             <a class="btn btn-sm-2 login-btn" href="#">Login</a>
@@ -138,8 +138,40 @@
   </section>
   <!-- End Tentang -->
 
+  <!-- Start Profil -->
+  <section class="profil section-padding" id="profil" data-scroll-index="2">
+    <div class="container">
+      <div class="row align-items-top">
+        <div class="col-lg-6 col-md-7">
+          <div class="section-title">
+            <h2>Profil <span>GARIS V</span></h2>
+          </div>
+          <div class="profil-text">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quod cumque 
+              corrupti doloribus consequuntur molestias quae quaerat. Vitae porro voluptatum 
+              suscipit non. Aliquid mollitia amet optio sit iste aperiam ipsa Lorem ipsum dolor 
+              sit amet consectetur adipisicing elit. Pariatur, officia quae a nulla, aliquid iste 
+              adipisci excepturi eligendi quos quaerat asperiores modi illum dolores provident explicabo 
+              maxime natus, ullam quibusdam.
+            </p>
+          </div>
+          <div class="profil-btn">
+            <a href="pages/profil.html" class="btn btn-2">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center">
+          <div class="profil-img">
+            <img src="img/kegiatan/Kegiatan 01.jpg" class="img-fluid img-responsive" alt="lab-rsi">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Profil -->
+
   <!-- Start Vlms -->
-  <section class="vlms section-padding" id="vlms" data-scroll-index="2">
+  <section class="vlms section-padding" id="vlms" data-scroll-index="3">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -187,7 +219,7 @@
   <!-- End Vlms -->
 
   <!-- Start Project -->
-  <section class="projek section-padding" id="projek" data-scroll-index="3">
+  <section class="projek section-padding" id="projek" data-scroll-index="4">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -233,8 +265,129 @@
   </section>
   <!-- End Project -->
 
+	<!-- Start Produk & Aplikasi -->
+  <section class="produk section-padding" id="vlms" data-scroll-index="5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>Produk & Aplikasi <span>GARIS V</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="owl-carousel list-carousel">
+          <div class="produk-item">
+            <img src="img/code.jpg" alt="produk">
+            <h3>Aplikasi 1</h3>
+						<span>Web App, Lorem ipsum dolor sit amet.</span>
+          </div>
+					<div class="produk-item">
+            <img src="img/code-0.jpg" alt="produk">
+            <h3>Aplikasi 2</h3>
+						<span>Web App, Lorem ipsum dolor sit amet.</span>
+          </div>
+					<div class="produk-item">
+            <img src="img/code.jpg" alt="produk">
+            <h3>Aplikasi 3</h3>
+						<span>Web App, Lorem ipsum dolor sit amet.</span>
+          </div>
+					<div class="produk-item">
+            <img src="img/code-0.jpg" alt="produk">
+            <h3>Aplikasi 4</h3>
+						<span>Web App, Lorem ipsum dolor sit amet.</span>
+          </div> 
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="produk-btn">
+          <a href="#" class="btn btn-2">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Produk & Aplikasi -->
+
+	<!-- Start Penghargaan -->
+	<section class="penghargaan section-padding" id="vlms" data-scroll-index="6">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>Penghargaan <span>GARIS V</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="owl-carousel list-carousel">
+					<div class="penghargaan-item">
+						<img src="img/penghargaan/penghargaan.jpg" alt="penghargaan">
+						<h3>Penghargaan 1</h3>
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
+					<div class="penghargaan-item">
+						<img src="img/penghargaan/penghargaan.jpg" alt="penghargaan">
+						<h3>Penghargaan 2</h3>
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
+					<div class="penghargaan-item">
+						<img src="img/penghargaan/penghargaan.jpg" alt="penghargaan">
+						<h3>Penghargaan 3</h3>
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
+					<div class="penghargaan-item">
+						<img src="img/penghargaan/penghargaan.jpg" alt="penghargaan">
+						<h3>Penghargaan 4</h3>
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div> 
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="penghargaan-btn">
+					<a href="#" class="btn btn-2">Selengkapnya</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Penghargaan -->
+
+  <!-- Start Kegiatan -->
+  <section class="kegiatan section-padding" id="projek" data-scroll-index="7">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>Foto Kegiatan <span>GARIS V</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+				<div class="owl-carousel list-carousel">
+					<div class="kegiatan-item">
+						<img src="img/kegiatan/Kegiatan 01.jpg" alt="penghargaan">
+					</div>
+					<div class="kegiatan-item">
+						<img src="img/kegiatan/Kegiatan 02.jpg" alt="penghargaan">
+					</div>
+					<div class="kegiatan-item">
+						<img src="img/kegiatan/Kegiatan 03.jpg" alt="penghargaan">
+					</div>
+					<div class="kegiatan-item">
+						<img src="img/kegiatan/Kegiatan 04.jpg" alt="penghargaan">
+					</div> 
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="penghargaan-btn">
+					<a href="#" class="btn btn-3">Selengkapnya</a>
+				</div>
+			</div>
+    </div>
+  </section>
+  <!-- End Kegiatan -->
+
   <!-- Start Faq -->
-  <section class="faq section-padding" id="faq" data-scroll-index="4">
+  <section class="faq section-padding" id="faq" data-scroll-index="8">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -311,7 +464,7 @@
   <!-- End Faq -->
 
   <!-- Start Kontak -->
-  <section class="kontak section-padding" id="kontak" data-scroll-index="5">
+  <section class="kontak section-padding" id="kontak" data-scroll-index="9">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -435,11 +588,11 @@
             <h3>Quick Menu</h3>
             <ul>
               <li><a href="index.html">Beranda</a></li>
-              <li><a href="pages/vlms.html">VLMS</a></li>
               <li><a href="pages/profil.html">Profil</a></li>
+              <li><a href="pages/vlms.html">VLMS</a></li>
               <li><a href="pages/projek.html">Projek</a></li>
               <li><a href="pages/faq.html">FAQ</a></li>
-              <li><a href="#" data-scroll-goto="5">Kontak</a></li>
+              <li><a href="#" data-scroll-goto="9">Kontak</a></li>
             </ul>
           </div>
         </div>
