@@ -53,6 +53,8 @@
               <a class="dropdown-item" href="#">Produk & Aplikasi</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Penghargaan</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Foto Kegiatan</a>
             </div>
           </li>
           <li class="nav-item">
@@ -319,34 +321,43 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-5">
+        <div class="col-lg-5 col-md-5">
           <div class="kontak-info">
-            <h3>Pertanyaan lebih lanjut hubungi kami!</h3>
+            <h3>
+							Jika ada kritik dan saran silahkan hubungi kami melalui kontak berikut:
+						</h3>
             <div class="kontak-info-item">
               <i class="fas fa-location-arrow"></i>
               <h4>Lokasi</h4>
               <p>
-                Jl. Mastrip PO.BOX 164 Jember
-                Jember Jawa Timur 68101 Indonesia
+                Gedung Jurusan Teknologi Informasi, Politeknik Negeri Jember , Lingkungan Panji, Tegalgede,
+								Kec. Kaliwates, Kabupaten Jember, Jawa Timur 68124
               </p>
             </div>
             <div class="kontak-info-item">
               <i class="fas fa-envelope"></i>
               <h4>Email</h4>
               <p>
-                jti1@polije.ac.id
+                lab.rsi.jti@polije.ac.id
               </p>
             </div>
             <div class="kontak-info-item">
               <i class="fas fa-phone"></i>
               <h4>Nomor Telepon</h4>
               <p>
-                0331-333532
+								0331-333532
+              </p>
+            </div>
+            <div class="kontak-info-item">
+              <i class="fas fa-fax"></i>
+              <h4>Fax</h4>
+              <p>
+								0331-333531
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-8 col-md-7">
+        <div class="col-lg-7 col-md-7">
           <div class="kontak-form">
             <form action="">
               <div class="row">
@@ -452,7 +463,10 @@
   </footer>
   <!-- End Footer -->
 
-</body>
+	<!-- Start Scroll to top -->
+	<div class='ignielToTop'/>
+	<!-- End Scroll to top -->
+
 <!-- jquery js -->
 <script src="js/jquery.min.js"></script>
 <!-- popper js -->
@@ -465,5 +479,37 @@
 <script src="js/scrollIt.min.js"></script>
 <!-- main js -->
 <script src="js/main.js"></script>
+
+<!-- Scroll to top javascript -->
+<script>
+	$(document).scroll(function() {
+		return $(document).scrollTop() > 300 ? $('.ignielToTop').addClass('show') : $('.ignielToTop').removeClass('show')
+		}), $('.ignielToTop').click(function() {
+			return $('html,body').animate({
+				scrollTop: '0'
+			});
+	});
+</script>
+<!-- Scroll to top javascript -->
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+	(function () {
+			var options = {
+					whatsapp: "+628978333856", // WhatsApp number
+					email: "lab.rsi.jti@polije.ac.id", // Email
+					call_to_action: "Ada pertanyaan ?", // Call to action
+					button_color: "#467FCF", // Color of button
+					position: "right", // Position may be 'right' or 'left'
+					order: "whatsapp,email", // Order of buttons
+			};
+			var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+	})();
+</script>
+<!-- /GetButton.io widget -->
+
 </body>
 </html>
