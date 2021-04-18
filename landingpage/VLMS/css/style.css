@@ -593,12 +593,12 @@ ul {
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
-	transition: all 0.25s ease;
+	/* transition: all 0.25s ease; */
 }
 
-.profil-detail-img img:hover {
+/* .profil-detail-img img:hover {
 	margin-left: 10px;
-}
+} */
 
 .profil-detail-text h3 {
 	font-size: 30px;
@@ -685,17 +685,17 @@ ul {
 }
 
 .anggota-item {
-	margin: 15px;
+	margin: 15px 0;
 	padding: 15px;
 	border-radius: 10px;
 	box-shadow: var(--shadow-black-300);
 	background-color: #ffffff;
-	transition: all 0.15s ease;
+	/* transition: all 0.15s ease; */
 }
 
-.anggota-item:hover {
+/* .anggota-item:hover {
 	margin-left: 5px;
-}
+} */
 
 .anggota-item h3 {
 	font-size: 18px;
@@ -742,8 +742,8 @@ ul {
 .vlms .fitur-item {
 	box-shadow: var(--shadow-black-100);
 	background-color: var(--black-000);
-	margin: 15px;
 	padding: 30px;
+	margin: 15px 0;
 	border-radius: 10px;
 	text-align: center;
 	position: relative;
@@ -829,7 +829,7 @@ ul {
 
 .vlms .fitur-item h3 {
 	font-size: 22px;
-	margin: 0 0 20px;
+	margin: 20px 0;
 	color: var(--black-900);
 	font-weight: 600;
 	text-transform: capitalize;
@@ -840,7 +840,7 @@ ul {
 	line-height: 26px;
 	font-weight: 500;
 	color: var(--black-400);
-	margin: 0 0 15px;
+	margin: 0 0 30px;
 }
 
 /* Projek */
