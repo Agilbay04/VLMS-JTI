@@ -585,7 +585,12 @@ ul {
 
 /* Profil Detail */
 .profil-detail {
-	background-color: var(--black-100);
+	background-image: url("../img/code.jpg");
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
 }
 
 .profil-detail-img img {
@@ -596,9 +601,25 @@ ul {
 	/* transition: all 0.25s ease; */
 }
 
+.profil-detail::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.9;
+}
+
 /* .profil-detail-img img:hover {
 	margin-left: 10px;
 } */
+
+.profil-detail .section-title h2 {
+	color: #FFFFFF;
+}
 
 .profil-detail-text h3 {
 	font-size: 30px;
@@ -622,6 +643,14 @@ ul {
 	margin-bottom: 20px;
 }
 
+.visi-title h3 {
+	color: #FFFFFF;
+}
+
+.visi-info-item p {
+	color: #ffffff;
+}
+
 .visi-info-item h4 {
 	position: absolute;
 	height: 40px;
@@ -635,12 +664,21 @@ ul {
 	border: 2px solid var(--color-1);
 	text-align: center;
 	line-height: 38px;
+	color: #FFFFFF;
 }
 
 .misi-info-item {
 	position: relative;
 	padding-left: 55px;
 	margin-bottom: 20px;
+}
+
+.misi-title h3 {
+	color: #FFFFFF;
+}
+
+.misi-info-item p {
+	color: #FFFFFF;
 }
 
 .misi-info-item h4 {
@@ -656,20 +694,22 @@ ul {
 	border: 2px solid var(--color-1);
 	text-align: center;
 	line-height: 38px;
+	color: #FFFFFF;
 }
 
 /* Struktur Anggota */
 .anggota {
-	background-image: url("../img/code.jpg");
+	background-color: var(--black-100);
+	/* background-image: url("../img/code.jpg");
 	background-position: center top;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	position: relative;
-	z-index: 1;
+	z-index: 1; */
 }
 
 .anggota .section-title h2 {
-	color: #ffffff;
+	color: #000000;
 }
 
 .anggota::before {
@@ -743,6 +783,10 @@ ul {
 	position: relative;
 	z-index: 1;
 
+}
+
+.vlms .section-title h2 {
+	color: #ffffff;
 }
 
 .vlms .fitur-item {
