@@ -440,7 +440,7 @@ ul {
 }
 
 .tentang {
-	background-color: var(--black-100);
+	background-color: #ffffff;
 }
 
 .tentang .tentang-btn {
@@ -598,7 +598,7 @@ ul {
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
-	/* transition: all 0.25s ease; */
+	transition: all 0.25s ease;
 }
 
 .profil-detail::before {
@@ -615,7 +615,7 @@ ul {
 
 /* .profil-detail-img img:hover {
 	margin-left: 10px;
-} */
+}
 
 .profil-detail .section-title h2 {
 	color: #FFFFFF;
@@ -725,17 +725,17 @@ ul {
 }
 
 .anggota-item {
-	margin: 15px 0;
+	margin: 15px;
 	padding: 15px;
 	border-radius: 10px;
 	box-shadow: var(--shadow-black-300);
 	background-color: #ffffff;
-	/* transition: all 0.15s ease; */
+	transition: all 0.15s ease;
 }
 
-/* .anggota-item:hover {
+.anggota-item:hover {
 	margin-left: 5px;
-} */
+}
 
 .anggota-item h3 {
 	font-size: 18px;
@@ -776,13 +776,7 @@ ul {
 
 /* Vlms */
 .vlms {
-	background-image: url('../img/code.jpg');
-	background-position: center top;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-
+	background-color: var(--black-100);
 }
 
 .vlms .section-title h2 {
@@ -792,8 +786,8 @@ ul {
 .vlms .fitur-item {
 	box-shadow: var(--shadow-black-100);
 	background-color: var(--black-000);
-	padding: 30px;
 	margin: 15px 0;
+	padding: 30px;
 	border-radius: 10px;
 	text-align: center;
 	position: relative;
@@ -879,7 +873,7 @@ ul {
 
 .vlms .fitur-item h3 {
 	font-size: 22px;
-	margin: 20px 0;
+	margin: 0 0 20px;
 	color: var(--black-900);
 	font-weight: 600;
 	text-transform: capitalize;
@@ -890,7 +884,11 @@ ul {
 	line-height: 26px;
 	font-weight: 500;
 	color: var(--black-400);
-	margin: 0 0 30px;
+	margin: 0 0 15px;
+}
+
+.vlms .vlms-btn {
+	margin-top: 40px;
 }
 
 /* Projek */
