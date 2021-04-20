@@ -440,7 +440,7 @@ ul {
 }
 
 .tentang {
-	background-color: var(--black-100);
+	background-color: #ffffff;
 }
 
 .tentang .tentang-btn {
@@ -736,19 +736,13 @@ ul {
 
 /* Vlms */
 .vlms {
-	background-image: url('../img/code.jpg');
-	background-position: center top;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-
+	background-color: var(--black-100);
 }
 
 .vlms .fitur-item {
 	box-shadow: var(--shadow-black-100);
 	background-color: var(--black-000);
-	margin: 15px;
+	margin: 15px 0;
 	padding: 30px;
 	border-radius: 10px;
 	text-align: center;
@@ -849,6 +843,10 @@ ul {
 	margin: 0 0 15px;
 }
 
+.vlms .vlms-btn {
+	margin-top: 40px;
+}
+
 /* Projek */
 .projek {
 	background-image: url('../img/code.jpg');
@@ -857,14 +855,6 @@ ul {
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 1;
-}
-
-.projek-text p {
-	font-size: 16px;
-	line-height: 26px;
-	color: var(--black-000);
-	margin: 0 0 15px;
-	font-weight: 300;
 }
 
 .projek .section-title h2 {
