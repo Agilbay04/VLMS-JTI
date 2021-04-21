@@ -613,12 +613,12 @@ ul {
 	opacity: 0.9;
 }
 
-/* .profil-detail-img img:hover {
-	margin-left: 10px;
-}
-
 .profil-detail .section-title h2 {
 	color: #FFFFFF;
+}
+
+/* .profil-detail-img img:hover {
+	margin-left: 10px;
 }
 
 .profil-detail-text h3 {
@@ -700,12 +700,6 @@ ul {
 /* Struktur Anggota */
 .anggota {
 	background-color: var(--black-100);
-	/* background-image: url("../img/code.jpg");
-	background-position: center top;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1; */
 }
 
 .anggota .section-title h2 {
@@ -725,7 +719,7 @@ ul {
 }
 
 .anggota-item {
-	margin: 15px;
+	margin: 15px 0;
 	padding: 15px;
 	border-radius: 10px;
 	box-shadow: var(--shadow-black-300);
@@ -763,7 +757,7 @@ ul {
 
 .anggota-title h2 {
 	font-size: 30px;
-	color: var(--black-000);
+	color: var(--black-400);
 	font-weight: 600;
 	text-transform: capitalize;
 	text-align: center;
@@ -780,7 +774,7 @@ ul {
 }
 
 .vlms .section-title h2 {
-	color: #ffffff;
+	color: var(--black-900);
 }
 
 .vlms .fitur-item {
