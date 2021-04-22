@@ -1302,6 +1302,83 @@ h2 {
 	border-color: var(--color-1);
 }
 
+/* Kontak Detail */
+.home-kontak {
+	min-height: 100vh;
+	padding: 150px 0;
+	background-image: url('../img/kontak.jpg');
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.home-kontak::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.home-kontak-text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.home-kontak-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.home-kontak-text p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.home-kontak-img img {
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 35px;
+	/* animation: bounceTop_01 3s ease infinite; */
+}
+
+.home-kontak-img {
+	position: relative;
+}
+
+.maps-garis{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.maps-garis iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.maps-garis{
+	margin: 40px 0;
+}
+
 /* Footer */
 .footer {
 	background-color: var(--main-color);
