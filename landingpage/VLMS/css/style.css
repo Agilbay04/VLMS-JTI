@@ -384,8 +384,8 @@ ul {
 .home-tentang {
 	min-height: 100vh;
 	padding: 150px 0;
-	background-image: url('../img/lab/lab-rsi.jpg');
-	background-position: center top;
+	background-image: url('../img/kegiatan/Kegiatan\ 01.jpg');
+	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	position: relative;
@@ -492,98 +492,6 @@ ul {
 	margin-top: 30px;
 }
 
-/* Profil */
-.home-profil {
-	min-height: 100vh;
-	padding: 150px 0;
-	background-image: url('../img/kegiatan/Kegiatan 06.jpg');
-	background-position: center top;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-}
-
-.home-profil::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-color: var(--main-to-dark-color);
-	opacity: 0.8;
-}
-
-.home-profil-text h1 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 5px;
-}
-
-.home-profil-text h2 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 20px;
-}
-
-.home-profil-text p {
-	font-size: 18px;
-	line-height: 28px;
-	color: #ffffff;
-	margin: 0;
-	font-weight: 300;
-
-}
-
-.home-profil-img img {
-	max-width: 250px;
-	width: 100%;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
-}
-
-.home-profil-img {
-	position: relative;
-}
-
-.profil {
-	background-color: #ffffff;
-}
-
-.profil .profil-btn {
-	margin-top: 40px;
-}
-
-.profil .section-title {
-	margin-bottom: 20px;
-}
-
-.profil .section-title h2 {
-	text-align: left;
-}
-
-.profil-img img {
-	max-width: 600px;
-	width: 100%;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
-}
-
-.profil-text p {
-	font-size: 16px;
-	line-height: 26px;
-	color: var(--black-400);
-	margin: 0 0 15px;
-	font-weight: 300;
-}
-
-/* Profil Detail */
 .profil-detail {
 	background-image: url("../img/code.jpg");
 	background-position: center top;
@@ -617,7 +525,7 @@ ul {
 	color: #FFFFFF;
 }
 
-/* .profil-detail-img img:hover {
+.profil-detail-img img:hover {
 	margin-left: 10px;
 }
 
@@ -1308,7 +1216,7 @@ h2 {
 	min-height: 100vh;
 	padding: 150px 0;
 	background-image: url('../img/kontak.jpg');
-	background-position: center top;
+	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	position: relative;
