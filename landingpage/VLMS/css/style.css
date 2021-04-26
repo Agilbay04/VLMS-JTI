@@ -832,12 +832,71 @@ ul {
 	border-radius: 30px;
 }
 
+/* Projek Detail */
+.home-projek {
+	min-height: 100vh;
+	padding: 150px 0;
+	background-image: url('../img/projek.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.home-projek::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.home-projek-text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.home-projek-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.home-projek-text p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.home-projek-img img {
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 35px;
+	/* animation: bounceTop_01 3s ease infinite; */
+}
+
+.home-projek-img {
+	position: relative;
+}
+
 
 /* E-Resources */
 .home-eresources {
 	min-height: 100vh;
 	padding: 150px 0;
-	background-image: url('../img/kegiatan/Kegiatan 06.jpg');
+	background-image: url('../img/jurnal.jpg');
 	background-position: center top;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -1135,6 +1194,65 @@ h2 {
 
 .faq .faq-btn {
 	margin-top: 40px;
+}
+
+/* Faq Detail */
+.home-faq {
+	min-height: 100vh;
+	padding: 150px 0;
+	background-image: url('../img/faq.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.home-faq::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.home-faq-text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.home-faq-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.home-faq-text p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.home-faq-img img {
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 35px;
+	/* animation: bounceTop_01 3s ease infinite; */
+}
+
+.home-faq-img {
+	position: relative;
 }
 
 
