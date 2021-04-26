@@ -793,6 +793,126 @@ ul {
 	margin-top: 40px;
 }
 
+/* VLMS Detail */
+.home-vlms {
+	min-height: 100vh;
+	padding: 150px 0;
+	background-image: url('../img/lab/lab-rsi.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.home-vlms::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.home-vlms-text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.home-vlms-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.home-vlms-text p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.home-vlms-img img {
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 35px;
+	/* animation: bounceTop_01 3s ease infinite; */
+}
+
+.home-vlms-img {
+	position: relative;
+}
+
+.vlms-detail {
+	background-color: #ffffff;
+}
+
+.vlms-detail .vlms-text {
+	margin-top: 30px;
+}
+
+.vlms-detail {
+	background-color: var(--black-100);
+}
+
+.vlms-detail .section-title h2 {
+	color: var(--black-900);
+}
+
+.vlms-detail .fitur-item {
+	box-shadow: var(--shadow-black-100);
+	background-color: var(--black-000);
+	margin: 15px 0;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.vlms-detail .fitur-item .icon {
+	height: 60px;
+	width: 60px;
+	margin: 0 auto 30px;
+	text-align: center;
+	font-size: 40px;
+	color: var(--color-1);
+	position: relative;
+	z-index: 1;
+	transition: all 0.5s ease;
+}
+
+.vlms-detail .fitur-item .icon i {
+	line-height: 60px;
+}
+
+.vlms-detail .fitur-item h3 {
+	font-size: 22px;
+	margin: 0 0 20px;
+	color: var(--black-900);
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.vlms-detail .fitur-item p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 500;
+	color: var(--black-400);
+	margin: 0 0 15px;
+}
+
+
 /* Projek */
 .projek {
 	background-image: url('../img/code.jpg');
