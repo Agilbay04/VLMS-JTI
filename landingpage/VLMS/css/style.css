@@ -900,6 +900,8 @@ ul {
 	text-align: left;
 }
 
+
+
 .projek::before {
 	content: '';
 	position: absolute;
@@ -915,7 +917,7 @@ ul {
 .projek-text p {
 	font-size: 16px;
 	line-height: 26px;
-	color: var(--black-000);
+	color: #FFFFFF;
 	margin: 0 0 15px;
 	font-weight: 300;
 }
