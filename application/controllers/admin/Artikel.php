@@ -12,4 +12,10 @@ class Artikel extends CI_Controller
         $this->load->view('admin/artikel');
         $this->load->view('admin/footer');
     }
+    public function new()
+    {
+        $this->load->view('admin/header');
+        $this->load->view('admin/newartikel');
+        $this->load->view('admin/footer');
+    }
 }
