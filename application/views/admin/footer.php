@@ -48,6 +48,12 @@
 <script src="<?= base_url('assets/admin') ?>/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url('assets/admin') ?>/dist/js/demo.js"></script>
+<script>
+    $(function() {
+        // Summernote
+        $('.textarea').summernote()
+    })
+</script>
 </body>
 
 </html>
