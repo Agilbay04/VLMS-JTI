@@ -43,12 +43,28 @@ ul {
 	list-style: none;
 }
 
+.text-main-color {
+	color: var(--main-color);
+}
+
+.bg-main-color {
+	background-color: var(--main-color);
+}
+
 .text-color-1 {
 	color: var(--color-1);
 }
 
+.bg-color-1 {
+	background-color: var(--color-1);
+}
+
 .text-color-2 {
 	color: var(--color-2);
+}
+
+.bg-color-2 {
+	background-color: var(--color-2);
 }
 
 .btn-1 {
@@ -1507,7 +1523,6 @@ h2 {
 	border-radius: 30px;
 	padding: 0 24px;
 	color: var(--black-900);
-	background-color: var(--black-900);
 	background-color: var(--black-000);
 	transition: all 0.5s ease;
 }
@@ -1574,7 +1589,6 @@ h2 {
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
 }
 
 .home-kontak-img {
@@ -1683,56 +1697,35 @@ h2 {
 	color: var(--color-1);
 }
 
-
-
-/* .search-blog-form .form-group-search {
-	margin-bottom: 25px;
-}
-
-.search-blog-form .form-control {
-	position: absolute;
+.search-box {
 	height: 42px;
 	border: 1px solid transparent;
+	background-color: var(--black-000);
 	box-shadow: var(--shadow-black-100);
 	border-radius: 30px;
-	padding: 0 24px;
-	color: var(--black-900);
-	background-color: var(--black-900);
-	background-color: var(--black-000);
-	transition: all 0.5s ease;
-}
-
-.search-blog-form .form-control:focus {
-	border-color: var(--color-1);
-} */
-
-.search-box {
-	position: absolute;
-	background: var(--black-000);
-	height: 40px;
-	border-radius: 40px;
-	padding: 10px;
-}
-
-.search-btn {
-	color: var(--black-000);
-	border: none;
-	float: right;
-	width: 42px;
-	height: 42px;
-	border-radius: 50%;
-	background: var(--color-1);
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	box-shadow: var(--shadow-black-300);
+	padding: 20px;
 	transition: all 0.5s ease;
 }
 
-.search-btn:hover {
-	background-color: var(--black-000);
+.search-box:hover {
+	border-color: var(--color-1);
+}
+
+.search-text {
+	flex: 1;
+	height: 30px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding-left: 10px;
+}
+
+.search-box i {
+	font-size: 20px;
 	color: var(--color-1);
-} 
+}
 
 .card-blog {
 	box-shadow: var(--shadow-black-100);
@@ -1742,12 +1735,49 @@ h2 {
 	color: var(--color-1);
 	font-weight: 700;
 	font-size: 24px;
+	transition: all 0.5s ease;
+}
+
+.blog-title:hover {
+	color: var(--main);
 }
 
 .blog-text {
 	color: var(--black-400);
 	font-weight: 500;
 	font-size: 16px;
+}
+
+.card-kategori {
+	box-shadow: var(--shadow-black-100);
+}
+
+.kategori {
+	margin-left: 10px;
+	transition: all 0.5s ease;
+}
+
+.kategori:hover {
+	margin-left: 15px;
+}
+
+.newslater-form .form-control {
+	height: 42px;
+	border: 1px solid transparent;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 30px;
+	padding: 0 24px;
+	color: var(--black-900);
+	background-color: var(--black-000);
+	transition: all 0.5s ease;
+}
+
+.newslater-form .form-control:focus {
+	border-color: var(--color-1);
+}
+
+.tags-item span{
+	box-shadow: var(--shadow-black-100);
 }
 
 /* Footer */
