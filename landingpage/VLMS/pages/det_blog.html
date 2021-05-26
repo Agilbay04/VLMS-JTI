@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css"> 
 <!-- main css -->
 <link rel="stylesheet" href="../css/style.css">
+<!-- main scss -->
+<link rel="stylesheet/less" type="text/css" href="../scss/style.scss" />
 </head>
 <body>
 
@@ -28,36 +30,36 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link active" href="#" data-scroll-nav="0">Beranda <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="../index.html">Beranda <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-scroll-nav="1">VLMS</a>
+					<a class="nav-link" href="../pages/vlms.html">VLMS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-scroll-nav="2">Tentang</a>
+					<a class="nav-link" href="../pages/tentang.html">Tentang</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-scroll-nav="3">Projek</a>
+					<a class="nav-link" href="../pages/projek.html">Projek</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Publikasi
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#" data-scroll-nav="5">Artikel</a>
+					<a class="dropdown-item" href="../pages/blog.html">Artikel</a>
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="../pages/eresources.html">Jurnal ilmiah & E-book</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#" data-scroll-nav="4">Produk & Aplikasi</a>
+					<a class="dropdown-item" href="../pages/produk_apk.html" data-scroll-nav="4">Produk & Aplikasi</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#" data-scroll-nav="5">Foto Kegiatan</a>
+					<a class="dropdown-item" href="#">Foto Kegiatan</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-scroll-nav="6">FAQ</a>
+					<a class="nav-link" href="../pages/faq.html" data-scroll-nav="6">FAQ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" data-scroll-nav="7">Kontak</a>
+					<a class="nav-link" href="../pages/kontak.html">Kontak</a>
 				</li>
 				<li class="nav-item">
 					<a class="btn btn-sm-2 login-btn" href="#">Login</a>
@@ -96,16 +98,8 @@
 <!-- Content Blog-->
 <section class="konten section-padding-blog" id="artikel">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-md-5">
-                <div class="section-title-blog">
-                    <h2>
-                        <i class="fas fa-newspaper pr-2"></i>
-                        Artikel <span>Terkini</span>
-                    </h2>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-7 mb-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-4 mb-4">
                 <div class="search-blog-form">
 					<form action="" method="POST">
 						<div class="search-box">
@@ -117,244 +111,250 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-7 col-md-5">
-                <div class="card mb-4 card-blog">
+            <div class="col-lg-12">
+                <div class="card mb-4 card-blog-detail">
+					<div class="card-header">
+						<h1 href="#" class="card-title blog-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+						<p class="text-muted blog-author">Ditulis oleh <span class="font-weight-bold">M. Angga Gumilang</span>, dipublikasi pada Rabu, 22 Oktober 2021 pukul 10.47</																p>
+					</div>
                     <img src="../img/blog.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="#" class="card-title blog-title" style="text-decoration: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
-                        <hr>
                         <p class="card-text blog-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos. Commodi iste nam provident consectetur voluptatum quasi ab ipsum...
-                            <a href="#" class="font-weight-bold" style="text-decoration: none;">baca selengkapnya</a>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis sint, tenetur itaque excepturi, necessitatibus voluptas explicabo nulla impedit autem eos.
                         </p>
 						<div class="widget d-flex">
 							<div class="widget-list mr-3">
-								<p class="card-text">
-									<small class="text-muted">
-										<i class="fas fa-user mr-1"></i>
-										M. Angga Gumilang
-									</small>
+								<p href="#" class="card-text text-decoration-none">
+									<i class="fas fa-eye mr-1 text-color-1"></i>
+									1300 Kali dilihat
 								</p>
 							</div>
 							<div class="widget-list mr-3">
-								<p class="card-text">
-									<small class="text-muted">
-										<i class="fas fa-calendar mr-1"></i>
-										22 Juli 2021
-									</small>
+								<p href="#" class="card-text text-decoration-none">
+									<i class="fas fa-tag mr-1 text-color-1"></i>
+									Tag:
+									<span class="badge badge-pill bg-main-color tags-item">
+										<a href="#" class="text-white text-decoration-none">Populer</a>
+									</span>
+									<span class="badge badge-pill bg-main-color tags-item">
+										<a href="#" class="text-white text-decoration-none">Hiburan</a>
+									</span>
+									<span class="badge badge-pill bg-main-color tags-item">
+										<a href="#" class="text-white text-decoration-none">Jos</a>
+									</span>
 								</p>
 							</div>
 							<div class="widget-list mr-3">
-								<a href="#" class="card-text" style="text-decoration: none;">
-									<small class="text-muted">
-										<i class="fas fa-comment mr-1"></i>
-										13 Komentar
-									</small>
+								<a href="#" class="card-text text-decoration-none text-color-1">
+									<i class="fas fa-comment mr-1 text-color-1"></i>
+									13 Komentar
 								</a>
 							</div>
 						</div>
                     </div>
                 </div>
-                <div class="card mb-4 card-blog">
-                    <img src="../img/blog.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-						<a href="#" class="card-title blog-title" style="text-decoration: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
-                        <hr>
-                        <p class="card-text blog-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eveniet, consequuntur quisquam, deleniti alias unde officiis odit adipisci minima praesentium architecto illum voluptatum dolorum blanditiis, quae minus ab sequi...
-                            <a href="#" class="font-weight-bold" style="text-decoration: none;">baca selengkapnya</a>
-                        </p>
-						<div class="widget d-flex">
-							<div class="widget-list mr-3">
-								<p class="card-text">
-									<small class="text-muted">
-										<i class="fas fa-user mr-1"></i>
-										M. Angga Gumilang
-									</small>
-								</p>
-							</div>
-							<div class="widget-list mr-3">
-								<p class="card-text">
-									<small class="text-muted">
-										<i class="fas fa-calendar mr-1"></i>
-										22 Juli 2021
-									</small>
-								</p>
-							</div>
-							<div class="widget-list mr-3">
-								<a href="#" class="card-text" style="text-decoration: none;">
-									<small class="text-muted">
-										<i class="fas fa-comment mr-1"></i>
-										13 Komentar
-									</small>
-								</a>
-							</div>
-						</div>
-                    </div>
-                </div>
-                <div class="card mb-4 card-blog">
-                    <img src="../img/blog.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-						<a href="#" class="card-title blog-title" style="text-decoration: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
-                        <hr>
-                        <p class="card-text blog-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis obcaecati totam quae praesentium, maxime nulla recusandae adipisci rem minus fugit aliquam reiciendis aliquid dicta dignissimos repellendus. Rem, dolore id...
-                            <a href="" class="font-weight-bold" style="text-decoration: none;">baca selengkapnya</a>
-                        </p>
-                        <div class="widget d-flex">
-							<div class="widget-list mr-3">
-								<p class="card-text">
-									<small class="text-muted">
-										<i class="fas fa-user mr-1"></i>
-										M. Angga Gumilang
-									</small>
-								</p>
-							</div>
-							<div class="widget-list mr-3">
-								<p class="card-text">
-									<small class="text-muted">
-										<i class="fas fa-calendar mr-1"></i>
-										22 Juli 2021
-									</small>
-								</p>
-							</div>
-							<div class="widget-list mr-3">
-								<a href="#" class="card-text" style="text-decoration: none;">
-									<small class="text-muted">
-										<i class="fas fa-comment mr-1"></i>
-										13 Komentar
-									</small>
-								</a>
-							</div>
-						</div>
-                    </div>
-                </div>  
-				<nav aria-label="...">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link text-color-1" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link text-color-1" href="#">1</a></li>
-                        <li class="page-item active" aria-current="page">
-                            <a class="page-link text-color-1" href="#">2</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link text-color-1" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-lg-5 col-md-7">
-				<!-- Kategori -->
-                <div class="card card-kategori mb-4">
-                    <h5 class="card-header font-weight-bold">
-                        <i class="fas fa-folder text-color-1 pr-2"></i> 
-						Kategori
-                    </h5>
-                    <div class="card-body">
-                        <div class="card shadow-sm mb-2">
-                            <div class="card-body p-2">
-                                <a href="#" class="kategori" style="text-decoration: none; color: var(--black-400); font-weight: 600;">
-                                    <i class="fas fa-folder-open text-color-1 pr-2"> </i> 
-                                    Machine Learning
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm mb-2">
-                            <div class="card-body p-2">
-                                <a href="#" class="kategori" style="text-decoration: none; color: var(--black-400); font-weight: 600;">
-                                    <i class="fas fa-folder-open text-color-1 pr-2"> </i> 
-                                    Deep Learning
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm mb-2">
-                            <div class="card-body p-2">
-                                <a href="#" class="kategori" style="text-decoration: none; color: var(--black-400); font-weight: 600;">
-                                    <i class="fas fa-folder-open text-color-1 pr-2"> </i> 
-                                    Artificial Intelligence
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm mb-2">
-                            <div class="card-body p-2">
-                                <a href="#" class="kategori" style="text-decoration: none; color: var(--black-400); font-weight: 600;">
-                                    <i class="fas fa-folder-open text-color-1 pr-2"> </i> 
-                                    Information Technology
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				<!-- End kategori -->
 
-				<!-- Tags -->
-				<div class="card card-tags mb-4">
+				<!-- Artikel terkait -->
+				<div class="card card-artikel-terkait mb-4">
                     <h5 class="card-header font-weight-bold">
-                        <i class="fas fa-tag text-color-1 pr-2"></i> 
-						Tags
+						<div class="d-flex align-items-center">
+							<i class="fas fa-newspaper text-color-1 pr-2"></i> 
+							Artikel terkait
+							<a href="../pages/blog.html" class="btn btn-sm-2 ml-auto">Artikel Lainnya</a>
+						</div>
                     </h5>
                     <div class="card-body">
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Populer</a>
-								</span>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="populer-card-detail mb-2">
+									<div class="meta">
+										<div class="photo" style="background-image: url(../img/blog.jpg)"></div>
+										<ul class="details">
+											<li class="author">
+												<a href="#">
+													<i class="fas fa-user"></i>
+													M. Angga Gumilang
+												</a>
+											</li>
+											<li class="date">
+												<i class="fas fa-calendar"></i>
+												22 Okt 2021
+											</li>
+											<li class="tags">
+												<ul>
+													<i class="fas fa-tag"></i>
+													<li><a href="#">Hiburan</a></li>
+													<li><a href="#">Heboh</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="description">
+										<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
+										<!-- <h2>Opening a door to the future</h2> -->
+										<p class="read-more">
+											<a class="text-decoration-none" href="#">Selengkapnya</a>
+										</p>
+									</div>
+								</div>
 							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Keren</a>
-								</span>
+							<div class="col-lg-4 col-md-6">
+								<div class="populer-card-detail mb-2">
+									<div class="meta">
+										<div class="photo" style="background-image: url(../img/projek.jpg)"></div>
+										<ul class="details">
+											<li class="author">
+												<a href="#">
+													<i class="fas fa-user"></i>
+													M. Angga Gumilang
+												</a>
+											</li>
+											<li class="date">
+												<i class="fas fa-calendar"></i>
+												22 Okt 2021
+											</li>
+											<li class="tags">
+												<ul>
+													<i class="fas fa-tag"></i>
+													<li><a href="#">Hiburan</a></li>
+													<li><a href="#">Heboh</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="description">
+										<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
+										<!-- <h2>Opening a door to the future</h2> -->
+										<p class="read-more">
+											<a class="text-decoration-none" href="#">Selengkapnya</a>
+										</p>
+									</div>
+								</div>
 							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Oke banget</a>
-								</span>
+							<div class="col-lg-4 col-md-6">
+								<div class="populer-card-detail mb-2">
+									<div class="meta">
+										<div class="photo" style="background-image: url(../img/code-0.jpg)"></div>
+										<ul class="details">
+											<li class="author">
+												<a href="#">
+													<i class="fas fa-user"></i>
+													M. Angga Gumilang
+												</a>
+											</li>
+											<li class="date">
+												<i class="fas fa-calendar"></i>
+												22 Okt 2021
+											</li>
+											<li class="tags">
+												<ul>
+													<i class="fas fa-tag"></i>
+													<li><a href="#">Hiburan</a></li>
+													<li><a href="#">Heboh</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="description">
+										<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
+										<!-- <h2>Opening a door to the future</h2> -->
+										<p class="read-more">
+											<a class="text-decoration-none" href="#">Selengkapnya</a>
+										</p>
+									</div>
+								</div>
 							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Jos</a>
-								</span>
+							<div class="col-lg-4 col-md-6">
+								<div class="populer-card-detail mb-2">
+									<div class="meta">
+										<div class="photo" style="background-image: url(../img/code.jpg)"></div>
+										<ul class="details">
+											<li class="author">
+												<a href="#">
+													<i class="fas fa-user"></i>
+													M. Angga Gumilang
+												</a>
+											</li>
+											<li class="date">
+												<i class="fas fa-calendar"></i>
+												22 Okt 2021
+											</li>
+											<li class="tags">
+												<ul>
+													<i class="fas fa-tag"></i>
+													<li><a href="#">Hiburan</a></li>
+													<li><a href="#">Heboh</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="description">
+										<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
+										<!-- <h2>Opening a door to the future</h2> -->
+										<p class="read-more">
+											<a class="text-decoration-none" href="#">Selengkapnya</a>
+										</p>
+									</div>
+								</div>
 							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Terbaik</a>
-								</span>
-							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Hiburan</a>
-								</span>
-							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Heboh</a>
-								</span>
-							</div>
-						</div>
-                        <div class="tags d-inline-flex">
-							<div class="tags-item mr-2 mt-2">
-								<span class="badge badge-pill bg-main-color">
-									<a href="#" class="text-white" style="text-decoration: none;">Tips & trik</a>
-								</span>
+							<div class="col-lg-4 col-md-6">
+								<div class="populer-card-detail mb-2">
+									<div class="meta">
+										<div class="photo" style="background-image: url(../img/faq.jpg)"></div>
+										<ul class="details">
+											<li class="author">
+												<a href="#">
+													<i class="fas fa-user"></i>
+													M. Angga Gumilang
+												</a>
+											</li>
+											<li class="date">
+												<i class="fas fa-calendar"></i>
+												22 Okt 2021
+											</li>
+											<li class="tags">
+												<ul>
+													<i class="fas fa-tag"></i>
+													<li><a href="#">Hiburan</a></li>
+													<li><a href="#">Heboh</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="description">
+										<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
+										<!-- <h2>Opening a door to the future</h2> -->
+										<p class="read-more">
+											<a class="text-decoration-none" href="#">Selengkapnya</a>
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
                     </div>
                 </div>
-				<!-- End Tags -->
+				<!-- End artikel terkait -->
 
 				<!-- Newslater  -->
 				<div class="card card-newslater mb-4">
@@ -365,19 +365,12 @@
                     <div class="card-body">
 						<div class="newslater-form">
 							<form action="" method="POST">
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="form-group-newslater text-center">
-											<div class="row align-items-center">
-												<div class="col-md-12">
-													<input type="text" name="email" id="" placeholder="Email anda..." class="form-control" autocomplete="off" required>
-													<button class="btn btn-sm-2 mt-2">
-														<i class="fas fa-paper-plane mr-2"></i>
-														Daftar
-													</button>
-												</div>
-											</div>
-										</div>
+								<div class="form-group-newslater text-center">
+									<div class="d-flex align-items-center">
+										<input type="text" name="email" id="" placeholder="Email anda..." class="form-control mr-3" autocomplete="off" required>
+										<button class="btn btn-sm-2 ml-auto">
+											Daftar
+										</button>
 									</div>
 								</div>
 							</form>
@@ -385,7 +378,6 @@
                     </div>
                 </div>
 				<!-- End Newslater -->
-
             </div>
         </div>
     </div>
@@ -407,12 +399,12 @@
 		</div>
 		<div class="col-lg-3 col-md-6">
 		<div class="footer-col">
-						<h3>Publikasi</h3>
-						<ul>
-							<li><a href="#">Jurnal Ilmiah & E-book</a></li>
-							<li><a href="#">Produk & Aplikasi</a></li>
-							<li><a href="#">Foto Kegiatan</a></li>
-						</ul>
+			<h3>Publikasi</h3>
+			<ul>
+				<li><a href="#">Jurnal Ilmiah & E-book</a></li>
+				<li><a href="#">Produk & Aplikasi</a></li>
+				<li><a href="#">Foto Kegiatan</a></li>
+			</ul>
 		</div>
 		</div>
 		<div class="col-lg-3 col-md-6">
