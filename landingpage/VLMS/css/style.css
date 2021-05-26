@@ -1617,11 +1617,11 @@ h2 {
 	margin: 40px 0;
 }
 
-/* Blog */
-.home-blog {
+/* Artikel */
+.home-artikel {
 	min-height: 100vh;
 	padding: 150px 0;
-	background-image: url('../img/blog.jpg');
+	background-image: url('../img/artikel.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -1629,7 +1629,7 @@ h2 {
 	z-index: 1;
 }
 
-.home-blog::before {
+.home-artikel::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1641,21 +1641,21 @@ h2 {
 	opacity: 0.8;
 }
 
-.home-blog-text h1 {
+.home-artikel-text h1 {
 	font-size: 45px;
 	font-weight: 700;
 	color: #ffffff;
 	margin: 0 0 5px;
 }
 
-.home-blog-text h2 {
+.home-artikel-text h2 {
 	font-size: 45px;
 	font-weight: 700;
 	color: #ffffff;
 	margin: 0 0 20px;
 }
 
-.home-blog-text p {
+.home-artikel-text p {
 	font-size: 18px;
 	line-height: 28px;
 	color: #ffffff;
@@ -1664,39 +1664,22 @@ h2 {
 
 }
 
-.home-blog-img img {
+.home-artikel-img img {
 	max-width: 250px;
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
 }
 
-.home-blog-img {
+.home-artikel-img {
 	position: relative;
 }
 
-.section-padding-blog {
-	padding: 40px 0;
-}
-
-.section-title-blog {
-	margin-bottom: 30px;
-}
-
-.section-title-blog h2 {
-	font-size: 40px;
-	color: var(--black-900);
-	font-weight: 700;
-	text-transform: capitalize;
+.artikel .section-title h2 {
 	text-align: left;
-	margin: 0;
 }
 
-.section-title-blog h2 span {
-	color: var(--color-1);
-}
-
-.section-title-blog i {
+.artikel .section-title i {
 	color: var(--color-1);
 }
 
@@ -1730,28 +1713,28 @@ h2 {
 	color: var(--color-1);
 }
 
-.card-blog {
+.card-artikel {
 	box-shadow: var(--shadow-black-100);
 	transition: all 0.5s ease;
 }
 
-.card-blog:hover {
+.card-artikel:hover {
 	transform-style: preserve-3d;
 	transform: scale(1.01);
 }
 
-.blog-title {
+.artikel-title {
 	color: var(--color-1);
 	font-weight: 700;
 	font-size: 24px;
 	transition: all 0.5s ease;
 }
 
-.blog-title:hover {
+.artikel-title:hover {
 	color: var(--main);
 }
 
-.blog-text {
+.artikel-text {
 	color: var(--black-400);
 	font-weight: 500;
 	font-size: 16px;
@@ -1929,14 +1912,14 @@ h2 {
 	box-shadow: var(--shadow-black-300);
 }
 
-/* Detail Blog */
-.card-blog-detail .blog-title {
+/* Detail artikel */
+.card-artikel-detail .artikel-title {
 	color: var(--main-color);
 	font-size: 35px;
 	text-transform: capitalize;
 }
 
-.card-blog-detail .blog-text {
+.card-artikel-detail .artikel-text {
 	font-size: 18px;
 }
 
@@ -2262,17 +2245,21 @@ h2 {
 
 	.profil .profil-btn {
 		text-align: center;
+	}	
+
+	.artikel .section-title h2 {
+		text-align: center;
 	}
 
-	.card-blog-detail .blog-title {
+	.card-artikel-detail .artikel-title {
 		font-size: 30px;
 	}
 
-	.card-blog-detail .blog-author {
+	.card-artikel-detail .artikel-author {
 		font-size: 14px;
 	}
 
-	.card-blog-detail .blog-text {
+	.card-artikel-detail .artikel-text {
 		font-size: 16px;
 	}
 }
@@ -2328,17 +2315,21 @@ h2 {
 
 	.section-title h2 {
 		font-size: 30px;
+	}	
+
+	.artikel .section-title h2 {
+		text-align: center;
 	}
 
-	.card-blog-detail .blog-title {
+	.card-artikel-detail .artikel-title {
 		font-size: 25px;
 	}
 
-	.card-blog-detail .blog-author {
+	.card-artikel-detail .artikel-author {
 		font-size: 12px;
 	}
 
-	.card-blog-detail .blog-text {
+	.card-artikel-detail .artikel-text {
 		font-size: 14px;
 	}
 }
