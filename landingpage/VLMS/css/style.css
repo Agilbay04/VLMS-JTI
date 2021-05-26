@@ -1729,6 +1729,12 @@ h2 {
 
 .card-blog {
 	box-shadow: var(--shadow-black-100);
+	transition: all 0.5s ease;
+}
+
+.card-blog:hover {
+	transform-style: preserve-3d;
+	transform: scale(1.01);
 }
 
 .blog-title {
@@ -1748,6 +1754,137 @@ h2 {
 	font-size: 16px;
 }
 
+.populer-card {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto;
+	box-shadow: var(--shadow-black-100);
+	margin-bottom: 1.6%;
+	background: var(--black-000);
+	line-height: 1.4;
+	font-family: sans-serif;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 0;
+}
+.populer-card a {
+  	color: inherit;
+}
+.populer-card a:hover {
+  	color: var(--color-1);
+}
+.populer-card:hover .photo {
+  	transform: scale(1.3) rotate(3deg);
+}
+.populer-card .meta {
+	position: relative;
+	z-index: 0;
+	height: 200px;
+}
+.populer-card .photo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	transition: transform 0.2s;
+}
+.populer-card .details,
+.populer-card .details ul {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+}
+.populer-card .details {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -100%;
+	margin: auto;
+	transition: left 0.2s;
+	background: var(--main-to-dark-color);
+	color: var(--black-000);
+	padding: 10px;
+	width: 100%;
+	font-size: 0.9rem;
+	opacity: 0.8;
+}
+.populer-card .details a {
+  	text-decoration: none;
+}
+.populer-card .details ul li {
+  	display: inline-block;
+}
+.populer-card .details .tags li {
+  	margin-right: 2px;
+}
+.populer-card .details .tags li:first-child {
+  	margin-left: -4px;
+}
+.populer-card .description {
+	padding: 1rem;
+	background: var(--black-000);
+	position: relative;
+	z-index: 1;
+}
+.populer-card .description h1 {
+	color: var(--black-400);
+	font-weight: 600;
+	line-height: 1;
+	margin: 0;
+	text-transform: capitalize;
+	font-size: 1rem;
+}
+/* .populer-card .description h2 {
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #a2a2a2;
+	margin-top: 5px;
+} */
+.populer-card .description .read-more {
+  	text-align: right;
+}
+.populer-card .description .read-more a {
+	color: var(--color-1);
+	display: inline-block;
+	position: relative;
+	font-size: 1rem;
+}
+/* .populer-card .description .read-more a:after {
+	content: \f061;
+	font-family: FontAwesome;
+	margin-left: -10px;
+	opacity: 0;
+	vertical-align: middle;
+	transition: margin 0.3s, opacity 0.3s;
+} */
+.populer-card .description .read-more a:hover:after {
+	margin-left: 5px;
+	opacity: 1;
+}
+.populer-card h1 {
+	position: relative;
+	margin: 1rem 0 0;
+}
+.populer-card h1:first-of-type {
+  	margin-top: 1.25rem;
+}
+.populer-card h1:first-of-type:before {
+  	content: "";
+	position: absolute;
+	height: 5px;
+	background: var(--color-1);
+	width: 35px;
+	top: -0.75rem;
+	border-radius: 3px;
+}
+.populer-card:hover .details {
+  	left: 0%;
+}
+
 .card-kategori {
 	box-shadow: var(--shadow-black-100);
 }
@@ -1759,6 +1896,10 @@ h2 {
 
 .kategori:hover {
 	margin-left: 15px;
+}
+
+.kategori-item i {
+	color: var(--color-1);
 }
 
 .newslater-form .form-control {
@@ -1776,8 +1917,13 @@ h2 {
 	border-color: var(--color-1);
 }
 
-.tags-item span{
-	box-shadow: var(--shadow-black-100);
+.tags-item span {
+	transition: all 0.5s ease;
+}
+
+.tags-item span:hover {
+	background-color: var(--color-1);
+	box-shadow: var(--shadow-black-300);
 }
 
 /* Footer */
@@ -1974,6 +2120,42 @@ h2 {
 	}
 }
 
+@media (min-width: 640px) {
+	.populer-card {
+		flex-direction: row;
+		max-width: 700px;
+	}
+	.populer-card .meta {
+		flex-basis: 40%;
+		height: auto;
+	}
+	.populer-card .description {
+		flex-basis: 60%;
+	}
+	.populer-card .description:before {
+		transform: skewX(-3deg);
+		content: "";
+		background: #fff;
+		width: 30px;
+		position: absolute;
+		left: -10px;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.populer-card.alt {
+		flex-direction: row-reverse;
+	}
+	.populer-card.alt .description:before {
+		left: inherit;
+		right: -10px;
+		transform: skew(3deg);
+	}
+	.populer-card.alt .details {
+		padding-left: 25px;
+	}
+}
+
 @media(max-width: 575px) {
 	.home-text h1 {
 		font-size: 30px;
@@ -1991,3 +2173,7 @@ h2 {
 		font-size: 30px;
 	}
 }
+
+
+
+
