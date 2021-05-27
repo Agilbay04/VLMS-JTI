@@ -49,8 +49,8 @@
                                             <td><?= $produks->nama_produk; ?></td>
                                             <td><?= $produks->deskripsi; ?></td>
                                             <td>
-                                                <a href="" class="btn btn-primary mx-3">Edit</a>
-                                                <a href="" class="btn btn-danger">Hapus</a>
+                                                <a href="<?= base_url('admin/produk/edit/') . $produks->id_produk ?>" class="btn btn-primary mx-3">Edit</a>
+                                                <a href="<?= base_url('admin/produk/hapus/') . $produks->id_produk ?>" class="btn btn-danger">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php } ?>
