@@ -29,4 +29,12 @@ class M_admin extends CI_Model
     {
         $this->db->delete($tabel, $where);
     }
+    public function edit_artikel($id)
+    {
+        return $this->db->from('artikel')
+            ->join('kategori', 'artikel.id_kategori=kategori.id_kategori')
+            ->join('anggota', 'artikel.author=anggota.id_anggota')
+            ->join('grup_penelitian', 'artikel.id_grup= grup_penelitian.id_grup')
+            ->where('artikel.id', $id)->get()->result();
+    }
 }

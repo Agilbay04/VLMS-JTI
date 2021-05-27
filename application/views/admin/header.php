@@ -197,6 +197,7 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-header">CMS</li>
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="fas fa-circle nav-icon"></i>
@@ -231,7 +232,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
+                                    <a href="<?= base_url('admin/produk') ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Produk</p>
                                     </a>
@@ -242,195 +243,24 @@
                                         <p>Repositori</p>
                                     </a>
                                 </li>
+
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-circle nav-icon"></i>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/anggota') ?>" class="nav-link">
+                                <i class="nav-icon far fa-user"></i>
                                 <p>
-                                    Garis 2
-                                    <i class="right fas fa-angle-left"></i>
+                                    Anggota
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="pages/charts/chartjs.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Artikel</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/flot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Tentang</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>FAQ</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projek</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Produk</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Repositori</p>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-circle nav-icon"></i>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/artikel') ?>" class="nav-link">
+                                <i class="nav-icon far fa-user"></i>
                                 <p>
-                                    Garis 3
-                                    <i class="right fas fa-angle-left"></i>
+                                    Artikel
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="pages/charts/chartjs.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Artikel</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/flot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Tentang</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>FAQ</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projek</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Produk</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Repositori</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-circle nav-icon"></i>
-                                <p>
-                                    Garis 4
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="pages/charts/chartjs.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Artikel</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/flot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Tentang</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>FAQ</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projek</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Produk</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Repositori</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-circle nav-icon"></i>
-                                <p>
-                                    Garis 5
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="pages/charts/chartjs.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Artikel</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/flot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Tentang</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>FAQ </p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projek</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Produk</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Repositori</p>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-header">EXAMPLES</li>
                         <li class="nav-item">
