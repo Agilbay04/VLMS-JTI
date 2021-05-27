@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- DataTables -->
+	<link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 </head>
 <body>
 
@@ -27,7 +30,7 @@
 		
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link active" href="#" data-scroll-nav="0">Beranda <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
@@ -181,12 +184,12 @@
 				</div>
 				<div class="tentang-text">
 					<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quod cumque 
-					corrupti doloribus consequuntur molestias quae quaerat. Vitae porro voluptatum 
-					suscipit non. Aliquid mollitia amet optio sit iste aperiam ipsa Lorem ipsum dolor 
-					sit amet consectetur adipisicing elit. Pariatur, officia quae a nulla, aliquid iste 
-					adipisci excepturi eligendi quos quaerat asperiores modi illum dolores provident explicabo 
-					maxime natus, ullam quibusdam.
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quod cumque 
+						corrupti doloribus consequuntur molestias quae quaerat. Vitae porro voluptatum 
+						suscipit non. Aliquid mollitia amet optio sit iste aperiam ipsa Lorem ipsum dolor 
+						sit amet consectetur adipisicing elit. Pariatur, officia quae a nulla, aliquid iste 
+						adipisci excepturi eligendi quos quaerat asperiores modi illum dolores provident explicabo 
+						maxime natus, ullam quibusdam.
 					</p>
 				</div>
 				<div class="tentang-btn">
@@ -199,437 +202,209 @@
 <!-- End Tentang -->
 
 <!-- Start Project -->
-	<section class="projek section-padding" id="tentang" data-scroll-index="3">
+<section class="projek section-padding" id="tentang" data-scroll-index="3">
 	<div class="container">
-		<div class="row align-items-top">
-			<div class="section-title">
-				<h2>Projek GARIS V <span>Kecerdasan Buatan</span></h2>
-			</div>
-				<div class="row justify-content-center">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="section-title">
+					<h2>Projek GARIS V <span>Kecerdasan Buatan</span></h2>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<a href="#projek1" data-toggle="collapse" aria-expanded="true" aria-controls="projek1">
-							<img src="img/anggota/Bety Etikasari.png" alt="anggota">
-							<h3>Bety Etikasari, S.Pd, M.Pd.</h3>
-							<span>Koordinator GARIS V Kecerdasan Buatan</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-8">
+				<!-- List dosen -->
+                <div class="card card-kategori mb-4">
+                    <h5 class="card-header font-weight-bold bg-main-color text-white">
+                        <i class="fas fa-user-tie text-color-1 pr-2"></i> 
+						Dosen
+                    </h5>
+                    <div class="card-body list-dosen">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#dosen-1" role="tab" aria-controls="v-pills-home" aria-selected="true">
+								<i class="fas fa-dot-circle pr-2"></i>
+								Bety Etikasari
+							</a>
+							<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#dosen-2" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+								<i class="fas fa-dot-circle pr-2"></i>
+								Mukhammad Angga Gumilang
+							</a>
+							<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#dosen-3" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+								<i class="fas fa-dot-circle pr-2"></i>
+								Deny Trias Utomo
 							</a>
 						</div>
-						<br>
-						<div id="projek1" class="collapse">
-							<table class="table table-light table-hover table-stripped">
-								<thead>
-									<tr>
-										<th scope="col" width="10%">No</th>
-										<th scope="col">Project</th>
-										<th scope="col" width="10%">Status</th>
-										<th scope="col" width="20%">Cluster</th>
-										<th scope="col" width="10%">Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">2</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">3</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">4</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">5</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">6</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">7</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">8</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-									<tr>
-										<th scope="row">9</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">Closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<a href="#projek2" data-toggle="collapse" >
-							<img src="img/anggota/Trismayanti Dwi Puspitasari.jpg" alt="anggota">
-							<h3>Trismayanti Dwi P, S.Kom, M.Cs</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-							</a>
+                </div>
+				<!-- End list dosen -->
+			</div>
+			
+			<div class="col-lg-8 col-md-4">
+				<!-- List projek -->
+				<div class="card card-kategori mb-4">
+					<h5 class="card-header font-weight-bold bg-main-color text-white">
+						<i class="fas fa-project-diagram text-color-1 pr-2"></i> 
+						Projek
+					</h5>
+					<!-- Item projek -->
+					<div class="card-body">
+						<div class="tab-content" id="v-pills-tabContent">
+							<div class="tab-pane fade show active" id="dosen-1" role="tabpanel" aria-labelledby="v-pills-home-tab">	
+								<table id="table-1" class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">No</th>
+											<th class="text-center">Projek</th>
+											<th class="text-center">Status</th>
+											<th class="text-center">Klaster</th>
+											<th class="text-center">Aksi</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">1</td>
+											<td>Internet
+											Explorer 5.5
+											</td>
+											<td class="text-center">
+												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-secondary">close</span>
+											</td>
+											<td>Win 95+</td>
+											<td class="text-center">
+												<button class="btn btn-sm-2 btn-disabled" type="submit">Apply</button>
+											</td>
+										</tr>
+										<tr>
+											<td class="text-center">2</td>
+											<td>Internet
+											Explorer 5.5
+											</td>
+											<td class="text-center">
+												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-success">open</span>
+											</td>
+											<td>Win 95+</td>
+											<td class="text-center">
+												<button class="btn btn-sm-2" type="submit">Apply</button>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th class="text-center">No</th>
+											<th class="text-center">Projek</th>
+											<th class="text-center">Status</th>
+											<th class="text-center">Klaster</th>
+											<th class="text-center">Aksi</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="dosen-2" role="tabpanel" aria-labelledby="v-pills-profile-tab">	
+								<table id="table-2" class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">No</th>
+											<th class="text-center">Projek</th>
+											<th class="text-center">Status</th>
+											<th class="text-center">Klaster</th>
+											<th class="text-center">Aksi</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">1</td>
+											<td>Internet
+											Explorer 5.5
+											</td>
+											<td class="text-center">
+												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-secondary">close</span>
+											</td>
+											<td>Win 95+</td>
+											<td class="text-center">
+												<button class="btn btn-sm-2 btn-disabled" type="submit">Apply</button>
+											</td>
+										</tr>
+										<tr>
+											<td class="text-center">2</td>
+											<td>Internet
+											Explorer 5.5
+											</td>
+											<td class="text-center">
+												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-success">open</span>
+											</td>
+											<td>Win 95+</td>
+											<td class="text-center">
+												<button class="btn btn-sm-2" type="submit">Apply</button>
+											</td>
+										</tr>
+										<tr>
+											<td class="text-center">3</td>
+											<td>Internet
+											Explorer 5.5
+											</td>
+											<td class="text-center">
+												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-secondary">close</span>
+											</td>
+											<td>Win 95+</td>
+											<td class="text-center">
+												<button class="btn btn-sm-2 btn-disabled" type="submit">Apply</button>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th class="text-center">No</th>
+											<th class="text-center">Projek</th>
+											<th class="text-center">Status</th>
+											<th class="text-center">Klaster</th>
+											<th class="text-center">Aksi</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="dosen-3" role="tabpanel" aria-labelledby="v-pills-profile-tab">	
+								<table id="table-3" class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">No</th>
+											<th class="text-center">Projek</th>
+											<th class="text-center">Status</th>
+											<th class="text-center">Klaster</th>
+											<th class="text-center">Aksi</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">1</td>
+											<td>Internet
+											Explorer 5.5
+											</td>
+											<td>Win 95+</td>
+											<td class="text-center">
+												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-success">open</span>
+											</td>
+											<td class="text-center">
+												<button class="btn btn-sm-2" type="submit">Apply</button>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th class="text-center">No</th>
+											<th class="text-center">Projek</th>
+											<th class="text-center">Status</th>
+											<th class="text-center">Klaster</th>
+											<th class="text-center">Aksi</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 						</div>
-						<br>
-						<div id="projek2" class="collapse">
-							<table class="table table-light table-hover table-stripped">
-								<thead>
-									<tr>
-										<th scope="col" width="10%">No</th>
-										<th scope="col">Project</th>
-										<th scope="col" width="10%">Status</th>
-										<th scope="col" width="20%">Cluster</th>
-										<th scope="col" width="10%">Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">2</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">3</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">4</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">5</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">6</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">7</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">8</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-									<tr>
-										<th scope="row">9</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">Closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+						<!-- End item projek -->
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-			<a href="#projek3" data-toggle="collapse" >
-							<img src="img/anggota/Faisal Lutfi Afriansyah.jpg" alt="anggota">
-							<h3>Faisal Lutfi Afriansyah, S.Kom, M.T.</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-			</a>
-						</div>
-		<br>
-						<div id="projek3" class="collapse">
-							<table class="table table-light table-hover table-stripped">
-								<thead>
-									<tr>
-										<th scope="col" width="10%">No</th>
-										<th scope="col">Project</th>
-										<th scope="col" width="10%">Status</th>
-										<th scope="col" width="20%">Cluster</th>
-										<th scope="col" width="10%">Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">2</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">3</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">4</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">5</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">6</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">7</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">8</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-									<tr>
-										<th scope="row">9</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">Closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<a href="#projek4" data-toggle="collapse" aria-expanded="false" aria-controls="projek4" >
-								<img src="img/anggota/Denny Trias.png" alt="anggota">
-								<h3>Denny Trias Utomo, S.Si, M.T.</h3>
-								<span>Pengampu Bidang Machine Learning</span>
-							</a>
-						</div>
-						<br>
-						<div id="projek4" class="collapse">
-							<table class="table table-light table-hover table-stripped">
-								<thead>
-									<tr>
-										<th scope="col" width="10%">No</th>
-										<th scope="col">Project</th>
-										<th scope="col" width="10%">Status</th>
-										<th scope="col" width="20%">Cluster</th>
-										<th scope="col" width="10%">Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Lorem Ipsum dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">2</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">3</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">4</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">5</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">6</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-primary">Open</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary">Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">7</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-
-									<tr>
-										<th scope="row">8</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-									<tr>
-										<th scope="row">9</th>
-										<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-										<td><span class="badge bg-secondary">Closed</span></td>
-										<td>Lorem Ipsum</td>
-										<td><button type="button" class="btn btn-primary" disabled>Apply</button></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<img src="img/anggota/Angga Gumilang.png" alt="anggota">
-							<h3>Mukhammad Angga Gumilang, S.Pd, M.Eng.</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<img src="img/anggota/Muhammad Rif'an Eko.JPG" alt="anggota">
-							<h3>Moh. Rif'an Eko, A.Md.</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<img src="img/anggota/Ariyana.jpg" alt="anggota">
-							<h3>Ariyana, A.Md.</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<img src="img/anggota/Lukie Permatasari.png" alt="anggota">
-							<h3>Lukie Perdanasari, S.Kom., M.T.</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<img src="img/anggota/Lukman Hakim.png" alt="anggota">
-							<h3>Lukman Hakim, S.Kom., M.Kom.</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="anggota-item">
-							<img src="img/anggota/Arvita Agus KurniaSari.jpg" alt="anggota">
-							<h3>Arvita Agus Kurniasari, S.ST.,M.Tr.Kom</h3>
-							<span>Pengampu Bidang Machine Learning</span>
-						</div>
-					</div>
+					<!-- End list projek -->
 				</div>
 			</div>
 		</div>
@@ -1053,7 +828,29 @@
 <script src="js/scrollIt.min.js"></script>
 <!-- main js -->
 <script src="js/main.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script>
+	$(function () {
+		$("#table-1").DataTable({
+			"responsive": true,
+			"autoWidth": false,
+		});
 
+		$("#table-2").DataTable({
+			"responsive": true,
+			"autoWidth": false,
+		});
+
+		$("#table-3").DataTable({
+			"responsive": true,
+			"autoWidth": false,
+		});
+	});
+</script>
 <!-- Scroll to top javascript -->
 <script>
 	$(document).scroll(function() {

@@ -534,7 +534,7 @@ ul {
 .tentang-text p {
 	font-size: 16px;
 	line-height: 26px;
-	color: var(--black-400);
+	color: var(--black-000);
 	margin: 0 0 15px;
 	font-weight: 300;
 }
@@ -557,8 +557,9 @@ ul {
 	transform: scale(1.01);
 }
 
-.tentang-detail .tentang-text {
+.tentang-detail .tentang-text p{
 	margin-top: 30px;
+	color: var(--black-400);
 }
 
 .profil-detail {
@@ -680,52 +681,6 @@ ul {
 	background-color: var(--black-100);
 }
 
-.anggota .section-title h2 {
-	color: #000000;
-}
-
-.anggota::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-color: var(--main-to-dark-color);
-	opacity: 0.8;
-}
-
-.anggota-item {
-	margin: 15px 0;
-	padding: 15px;
-	border-radius: 10px;
-	box-shadow: var(--shadow-black-300);
-	background-color: #ffffff;
-	transition: all 0.15s ease;
-}
-
-.anggota-item:hover {
-	transform-style: preserve-3d;
-	transform: scale(1.01);
-}
-
-.anggota-item h3 {
-	font-size: 18px;
-	color: var(--black--900);
-	font-weight: 600;
-	margin: 10px 0 8px;
-	text-transform: capitalize;
-}
-
-.anggota-item span {
-	display: block;
-	font-size: 16px;
-	font-weight: 500;
-	color: var(--black-400);
-	text-transform: capitalize;
-}
-
 .anggota-title {
 	margin-bottom: 10px;
 }
@@ -746,6 +701,148 @@ ul {
 .anggota-title h2 span {
 	color: var(--black-000);
 }
+
+.anggota-dosen {
+	/* --bg-filter-opacity: 0.5; */
+	/* background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img); */
+	height: 20em;
+	width: 15em;
+	font-size: 1.5em;
+	color: transparent;
+	border-radius: 1em;
+	padding: 1em;
+	/*margin: 2em;*/
+	display: flex;
+	align-items: flex-end;
+	background-size: cover;
+	background-position: center;
+	box-shadow: var(--shadow-black-300);
+	transition: all 0.5s ease;
+	position: relative;
+	overflow: hidden;
+	border: 10px solid var(--black-100);
+}
+
+.anggota-dosen:hover {
+	transform: rotate(0);
+}
+
+.anggota-dosen h1 {
+	margin: 0;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	font-weight: 900;
+}
+
+.anggota-dosen p {
+	font-size: 0.75em;
+	margin-top: 0.5em;
+	line-height: 2em;
+	font-weight: 600;
+}
+
+.anggota-dosen .tags {
+	display: flex;
+}
+
+.anggota-dosen .ket {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 5px;
+	margin-right: 5px;
+	box-shadow: var(--shadow-black-100);
+	color: var(--black-000);
+	/* font-size: 0.75em; */
+	/* padding: 1em; */
+	/* line-height: 1em; */
+	/* opacity: .8; */
+}
+
+.anggota-dosen:before,
+.anggota-dosen:after {
+	content: '';
+	transform: scale(0);
+	transform-origin: top left;
+	border-radius: 50%;
+	position: absolute;
+	left: -50%;
+	top: -50%;
+	z-index: -5;
+	transition: all 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.anggota-dosen:before {
+	background: var(--main-color);
+	width: 250%;
+	height: 250%;
+	opacity: 0.5;
+}
+
+.anggota-dosen:after {
+	background: var(--main-color);
+	width: 200%;
+	height: 200%;
+	opacity: 0.5;
+}
+
+.anggota-dosen:hover {
+	color: var(--black-100);
+}
+
+.anggota-dosen:hover:before,
+.anggota-dosen:hover:after {
+	transform: scale(1);
+}
+
+.anggota-dosen-grid-space .num {
+	font-size: 3em;
+	margin-bottom: 1.2rem;
+	margin-left: 1rem;
+}
+
+.info {
+	font-size: 1.2em;
+	display: flex;
+	padding: 1em 3em;
+	height: 3em;
+}
+
+.info img {
+	height: 3em;
+	margin-right: 0.5em;
+}
+
+.info h1 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+	.info {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.projek-dosen {
+		max-width: calc(100vw - 4rem);
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.info {
+		display: block;
+		text-align: center;
+	}
+
+	.info h1 {
+		margin: 0;
+	}
+}
+
 
 /* Vlms */
 .vlms {
@@ -789,6 +886,7 @@ ul {
 .vlms .fitur-item:hover::before {
 	left: 10px;
 	opacity: 1;
+
 }
 
 .vlms .fitur-item::after {
@@ -990,7 +1088,7 @@ ul {
 }
 
 .projek .section-title h2 {
-	text-align: left;
+	text-align: center;
 }
 
 .projek-text p {
@@ -1002,6 +1100,26 @@ ul {
 
 .projek button .projek-btn {
 	margin-top: 40px;
+}
+
+.projek a {
+	text-decoration: none;
+}
+
+.list-dosen a {
+	font-weight: 600;
+	color: var(--black-400);
+}
+
+.list-dosen i {
+	color: var(--main-color);
+}
+
+.list-dosen .nav-link.active {
+	background-color: var(--color-1);
+	box-shadow: var(--shadow-black-300);
+	transition: all 0.5s ease;
+	border-radius: 30px;
 }
 
 /* Projek Detail */
@@ -1373,65 +1491,6 @@ table th {
 	box-shadow: var(--shadow-black-300);
 }
 
-/* List Jurnal */
-/* body {
-	background: #fff;
-}
-
-.ibox-content {
-	background-color: #FFFFFF;
-	color: inherit;
-	padding: 15px 20px 20px 20px;
-	border-color: #FFFFFF;
-	border-image: none;
-	border-style: solid solid none;
-	border-width: 1px 0px;
-}
-
-.search-form {
-	margin-top: 10px;
-}
-
-.search-result h3 {
-	margin-bottom: 0;
-	color: #1E0FBE;
-}
-
-.search-result .search-link {
-	color: #006621;
-}
-
-.search-result p {
-	font-size: 12px;
-	margin-top: 5px;
-}
-
-.hr-line-dashed {
-	border-top: 1px dashed #E7EAEC;
-	color: #ffffff;
-	background-color: #ffffff;
-	height: 1px;
-	margin: 20px 0;
-}
-
-h2 {
-	font-size: 24px;
-	font-weight: 100;
-} */
-
-/* List Jurnal*/
-/* .list-group {
-	max-height: 300px;
-	margin-bottom: 10px;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
-} */
-
-/* Detail E-Resources */
-/* .eresources-detail {
-	background-color: #ffffff;
-} */
-
 /* Produk & Aplikasi */
 .produk {
 	background-image: url('../img/code.jpg');
@@ -1487,6 +1546,10 @@ h2 {
 }
 
 /* Faq */
+.faq {
+	background-color: var(--black-000);
+}
+
 .faq .accordion-item:not(:last-child) {
 	margin-bottom: 20px;
 }
@@ -1979,14 +2042,6 @@ h2 {
 	font-size: 1rem;
 }
 
-/* .populer-card .description .read-more a:after {
-	content: \f061;
-	font-family: FontAwesome;
-	margin-left: -10px;
-	opacity: 0;
-	vertical-align: middle;
-	transition: margin 0.3s, opacity 0.3s;
-} */
 .populer-card .description .read-more a:hover:after {
 	margin-left: 5px;
 	opacity: 1;
@@ -2054,6 +2109,13 @@ h2 {
 .tags-item:hover {
 	background-color: var(--color-1);
 	box-shadow: var(--shadow-black-300);
+}
+
+.pagination .page-item.active a{
+	border-color: var(--color-1);
+	background-color: var(--color-1);
+	box-shadow: var(--shadow-black-300);
+	transition: all 0.5s ease;
 }
 
 /* Detail artikel */
@@ -2415,6 +2477,10 @@ h2 {
 		text-align: center;
 	}
 
+	.e-resources .section-title h2 {
+		text-align: center;
+	}
+
 	.card-artikel-detail .artikel-title {
 		font-size: 30px;
 	}
@@ -2488,6 +2554,10 @@ h2 {
 	}
 
 	.artikel .section-title h2 {
+		text-align: center;
+	}
+
+	.e-resources .section-title h2 {
 		text-align: center;
 	}
 
