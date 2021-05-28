@@ -232,12 +232,6 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('admin/produk') ?>" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Produk</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="pages/charts/inline.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Repositori</p>
@@ -252,6 +246,12 @@
                                 <p>
                                     Anggota
                                 </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/produk') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Produk</p>
                             </a>
                         </li>
                         <li class="nav-item">
