@@ -242,9 +242,25 @@
                         </li>
                         <li class="nav-item">
                             <a href="<?= base_url('admin/anggota') ?>" class="nav-link">
-                                <i class="nav-icon far fa-user"></i>
+                                <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Anggota
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/grup') ?>" class="nav-link">
+                                <i class="nav-icon far fa-user"></i>
+                                <p>
+                                    Grup
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/projek') ?>" class="nav-link">
+                                <i class="nav-icon fas fa-tasks"></i>
+                                <p>
+                                    Projek
                                 </p>
                             </a>
                         </li>
@@ -256,7 +272,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="<?= base_url('admin/artikel') ?>" class="nav-link">
-                                <i class="nav-icon far fa-user"></i>
+                                <i class="nav-icon fas fa-newspaper"></i>
                                 <p>
                                     Artikel
                                 </p>
