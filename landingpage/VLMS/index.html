@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Lightbox popup css -->
+	<!-- <link rel="stylesheet" href="css/lightbox.css"> -->
 	<!-- DataTables -->
 	<link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
 	<link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
@@ -53,14 +55,14 @@
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="#" data-scroll-nav="5">Artikel</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="pages/foto.html">Foto Kegiatan</a>
+					<a class="dropdown-item" href="#" data-scroll-nav="6">Foto Kegiatan</a>
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#" data-scroll-nav="6">FAQ</a>
+				<a class="nav-link" href="#" data-scroll-nav="7">FAQ</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#" data-scroll-nav="7">Kontak</a>
+				<a class="nav-link" href="#" data-scroll-nav="8">Kontak</a>
 			</li>
 			<li class="nav-item">
 				<a class="btn btn-sm-2 login-btn" href="#">Login</a>
@@ -85,7 +87,7 @@
 					Politeknik Negeri Jember Kampus I Jember, Indonesia.
 					</p>
 					<div class="home-btn">
-						<a href="#" data-scroll-goto="1" class="btn btn-1">Selengkapnya</a>
+						<a href="#" class="btn btn-1" data-scroll-goto="2">Selengkapnya</a>
 						<button type="button" class="btn btn-2 join">Join Us!</button>
 					</div>
 				</div>
@@ -114,8 +116,8 @@
 			<div class="col-lg-4 col-md-6">
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-users"></i></div>
-					<h3>Member Lab</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, non aliquid impedit asperiores voluptatum odit</p>
+					<h3>Membership Lab</h3>
+					<p>Sistem rekrutmen anggota lab untuk mahasiswa</p>
 					<!-- <button type="button" class="btn btn-2">Selengkapnya</button> -->
 				</div>
 			</div>
@@ -123,15 +125,15 @@
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-toolbox"></i></div>
 					<h3>Pinjam Alat</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, non aliquid impedit asperiores voluptatum odit</p>
+					<p>Sistem peminjaman alat laboratorium untuk keperluan riset</p>
 					<!-- <button type="button" class="btn btn-2">Selengkapnya</button> -->
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-calendar"></i></div>
-					<h3>Booking Lab</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, non aliquid impedit asperiores voluptatum odit</p>
+					<h3>Reservasi</h3>
+					<p>Sistem booking peminjaman ruangan lab untuk keperluan riset</p>
 					<!-- <button type="button" class="btn btn-2">Selengkapnya</button> -->
 				</div>
 			</div>
@@ -139,15 +141,15 @@
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-bell"></i></div>
 					<h3>Event Lab</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, non aliquid impedit asperiores voluptatum odit</p>
+					<p>Sistem notifikasi dan penjadwalan kegiatan lab</p>
 					<!-- <button type="button" class="btn btn-2">Selengkapnya</button> -->
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-book"></i></div>
-					<h3>E-Perpustakaan</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, non aliquid impedit asperiores voluptatum odit<p>
+					<h3>E-Library</h3>
+					<p>Kumpulan e-resources/e-book yang dimiliki oleh Garis<p>
 					<!-- <a href="#" class="btn btn-2">Selengkapnya</a> -->
 				</div> 
 			</div>
@@ -155,7 +157,7 @@
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-mobile"></i></div>
 					<h3>Pameran Produk & Aplikasi</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, non aliquid impedit asperiores voluptatum odit<p>
+					<p>Kumpulan produk/aplikasi unggulan hasil riset Garis<p>
 					<!-- <a href="#" class="btn btn-2">Selengkapnya</a> -->
 				</div> 
 			</div>
@@ -416,7 +418,7 @@
 <!-- End Project -->
 
 <!-- Start Produk & Aplikasi -->
-<section class="produk section-padding" id="vlms" data-scroll-index="4">
+<section class="produk section-padding" id="produk" data-scroll-index="4">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
@@ -426,32 +428,58 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="owl-carousel list-carousel">
+			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/code.jpg" alt="produk">
+					<img src="img/produk.jpg" alt="produk">
 					<h3>Aplikasi 1</h3>
-					<span>Web App, Lorem ipsum dolor sit amet.</span>
+					<span>
+						<a href="#">
+							Lihat aplikasi 
+							<i class="fas fa-arrow-right"></i>
+						</a>
+					</span>
 				</div>
+			</div>
+			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/code-0.jpg" alt="produk">
+					<img src="img/produk.jpg" alt="produk">
 					<h3>Aplikasi 2</h3>
-					<span>Web App, Lorem ipsum dolor sit amet.</span>
+					<span>
+						<a href="#">
+							Lihat aplikasi 
+							<i class="fas fa-arrow-right"></i>
+						</a>
+					</span>
 				</div>
+			</div>
+			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/code.jpg" alt="produk">
+					<img src="img/produk.jpg" alt="produk">
 					<h3>Aplikasi 3</h3>
-					<span>Web App, Lorem ipsum dolor sit amet.</span>
+					<span>
+						<a href="#">
+							Lihat aplikasi 
+							<i class="fas fa-arrow-right"></i>
+						</a>
+					</span>
 				</div>
+			</div>
+			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/code-0.jpg" alt="produk">
+					<img src="img/produk.jpg" alt="produk">
 					<h3>Aplikasi 4</h3>
-					<span>Web App, Lorem ipsum dolor sit amet.</span>
+					<span>
+						<a href="#">
+							Lihat aplikasi 
+							<i class="fas fa-arrow-right"></i>
+						</a>
+					</span>
 				</div> 
 			</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
-				<a href="#" class="btn btn-2">Selengkapnya</a>
+				<a href="pages/produk.html" class="btn btn-2">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -584,8 +612,69 @@
 </section>
 <!-- End Artikel -->
 
+<!-- Galeri Foto -->
+<section class="galeri section-padding" id="galeri" data-scroll-index="6">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="section-title">
+					<h2>Foto Kegiatan <span>GARIS V</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center no-gutters">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 01.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 1">
+					<img src="img/galeri/Kegiatan 01.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 02.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 2">
+					<img src="img/galeri/Kegiatan 02.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 03.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 3">
+					<img src="img/galeri/Kegiatan 03.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 04.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 4">
+					<img src="img/galeri/Kegiatan 04.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 05.jpg.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 5">
+					<img src="img/galeri/Kegiatan 05.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 06.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 6">
+					<img src="img/galeri/Kegiatan 06.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 07.jpg.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 7">
+					<img src="img/galeri/Kegiatan 07.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="img/galeri/Kegiatan 08.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 8">
+					<img src="img/galeri/Kegiatan 08.jpg" class="art img-fluid" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="produk-btn">
+				<a href="#" class="btn btn-2">Selengkapnya</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Galeri Foto -->
+
 <!-- Start Faq -->
-<section class="faq section-padding" id="faq" data-scroll-index="6">
+<section class="faq section-padding" id="faq" data-scroll-index="7">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
@@ -596,60 +685,56 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
-			<div id="accordion">
-				<div class="accordion-item">
-				<div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
-					<h3>Bagaimana cara bergabung menjadi member GARIS V ?</h3>
-				</div>
-				<div class="collapse show" id="collapse-01" data-parent="#accordion">
-					<div class="accordion-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Dolores velit fuga doloremque. Laudantium, repellat qui.
-					</p>
+				<div id="accordion">
+					<div class="accordion-item">
+						<div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
+							<h3>Bagaimana cara bergabung menjadi member GARIS V ?</h3>
+						</div>
+						<div class="collapse show" id="collapse-01" data-parent="#accordion">
+							<div class="accordion-body">
+								<p>
+									Tinggal pilih project yang tersedia dan isi form apply
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
+							<h3>Apakah ada persyaratan khusus untuk bergabung menjadi member GARIS V ?</h3>
+						</div>
+						<div class="collapse" id="collapse-02" data-parent="#accordion">
+							<div class="accordion-body">
+								<p>
+									Persyaratan khusus tergantung dari masing-masing pemilik project, silahkan hubungi dosen yang bersangkutan!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
+							<h3>Bolehkah mahasiswa mengambil lebih dari 1 projek sekaligus?</h3>
+						</div>
+						<div class="collapse" id="collapse-03" data-parent="#accordion">
+							<div class="accordion-body">
+								<p>
+									Bisa, namun alangkah lebih baik jika mahasiswa hanya tergabung dalam 1 project pada waktu yang bersamaan
+								</p>
+							</div>
+						</div>
+						</div>
+					<div class="accordion-item">
+						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
+							<h3>Mahasiswa semester berapa yang boleh bergabung GARIS V ?</h3>
+						</div>
+						<div class="collapse" id="collapse-04" data-parent="#accordion">
+							<div class="accordion-body">
+								<p>
+									Mahasiswa aktif, dari Kampus Utama Polije maupun Kampus PSDKU Polije bisa mendaftar di masing-masing lab yang tersedia di JTI Polije.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				</div>
-				<div class="accordion-item">
-				<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
-					<h3>Apakah ada persyaratan khusus untuk bergabung menjadi member GARIS V ?</h3>
-				</div>
-				<div class="collapse" id="collapse-02" data-parent="#accordion">
-					<div class="accordion-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Dolores velit fuga doloremque. Laudantium, repellat qui.
-					</p>
-					</div>
-				</div>
-				</div>
-				<div class="accordion-item">
-				<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
-					<h3>Bolehkah mahasiswa mengambil 2 projek sekaligus ?</h3>
-				</div>
-				<div class="collapse" id="collapse-03" data-parent="#accordion">
-					<div class="accordion-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Dolores velit fuga doloremque. Laudantium, repellat qui.
-					</p>
-					</div>
-				</div>
-				</div>
-				<div class="accordion-item">
-				<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
-					<h3>Mahasiswa semester berapa yang boleh bergabung GARIS V ?</h3>
-				</div>
-				<div class="collapse" id="collapse-04" data-parent="#accordion">
-					<div class="accordion-body">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Dolores velit fuga doloremque. Laudantium, repellat qui.
-					</p>
-					</div>
-				</div>
-				</div>
-			</div>
 			</div>
 		</div>
 	</div>
@@ -657,7 +742,7 @@
 <!-- End Faq -->
 
 <!-- Start Kontak -->
-<section class="kontak section-padding" id="kontak" data-scroll-index="7">
+<section class="kontak section-padding" id="kontak" data-scroll-index="8">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
@@ -761,64 +846,75 @@
 <!-- Start Footer -->
 <footer class="footer">
 	<div class="container">
-	<div class="row">
-		<div class="col-lg-3 col-md-6">
-		<div class="footer-col">
-			<h3>Tentang</h3>
-			<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-			Illo sint nobis, rerum repellat quasi fugiat.
-			</p>
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-col">
+					<h3>GARIS V Kecerdasan Buatan</h3>
+					<ul>
+						<li><a href="pages/tentang.html"> Tentang</a></li>
+						<li><a href="#" data-scroll-goto="7"> Faq</a></li>
+						<li><a href="#"> Join Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-col">
+					<div class="footer-col">
+						<h3>Menu Utama</h3>
+						<div class="row">
+							<div class="col-lg-4">
+								<ul>
+									<li><a href="index.html">Beranda</a></li>
+									<li><a href="#" data-scroll-goto="1">VLMS</a></li>
+									<li><a href="#" data-scroll-goto="3">Projek</a></li>
+									<li><a href="#" data-scroll-goto="7">Kontak</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-8">
+								<ul>
+									<li><a href="pages/eresources.html">E-Resources</a></li>
+									<li><a href="#">Produk & Aplikasi</a></li>
+									<li><a href="pages/artikel.html">Artikel</a></li>
+									<li><a href="#">Foto Kegiatan</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-col">
+					<h3>Privasi dan Policy</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-col">
+					<h3>Sosial Media</h3>
+					<ul>
+						<li><a href="https://www.facebook.com/jtipolije" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+						<li><a href="https://www.youtube.com/channel/UCyjE1iZi_oXfVqJFzlM-WAQ" target="_blank"><i class="fab fa-youtube-square"></i> Youtube</a></li>
+						<li><a href="#"><i class="fab fa-whatsapp-square" target="_blank"></i> WhatsApp</a></li>
+						<li><a href="https://www.instagram.com/jtipolije/" target="_blank"><i class="fab fa-instagram-square"></i> Istagram</a></li>
+						<li><a href="jti1@polije.ac.id" target="_blank"><i class="fas fa-envelope-square"></i> Email</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="copyright-text">&copy; 2021 Grup Riset dan Keahlian V Kecerdasan Buatan JTI - Politeknik Negeri Jember<p>
+			</div>
 		</div>
-		<div class="col-lg-3 col-md-6">
-		<div class="footer-col">
-			<h3>Publikasi</h3>
-			<ul>
-				<li><a href="#">Jurnal Ilmiah & E-book</a></li>
-				<li><a href="#">Produk & Aplikasi</a></li>
-				<li><a href="#">Foto Kegiatan</a></li>
-			</ul>
-		</div>
-		</div>
-		<div class="col-lg-3 col-md-6">
-		<div class="footer-col">
-			<h3>Quick Menu</h3>
-			<ul>
-			<li><a href="index.html">Beranda</a></li>
-			<li><a href="pages/profil.html">Profil</a></li>
-			<li><a href="pages/vlms.html">VLMS</a></li>
-			<li><a href="pages/projek.html">Projek</a></li>
-			<li><a href="pages/faq.html">FAQ</a></li>
-			<li><a href="#" data-scroll-goto="9">Kontak</a></li>
-			</ul>
-		</div>
-		</div>
-		<div class="col-lg-3 col-md-6">
-		<div class="footer-col">
-			<h3>Sosial Media</h3>
-			<ul>
-			<li><a href="https://www.facebook.com/jtipolije" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
-			<li><a href="https://www.youtube.com/channel/UCyjE1iZi_oXfVqJFzlM-WAQ" target="_blank"><i class="fab fa-youtube-square"></i> Youtube</a></li>
-			<li><a href="#"><i class="fab fa-whatsapp-square" target="_blank"></i> WhatsApp</a></li>
-			<li><a href="https://www.instagram.com/jtipolije/" target="_blank"><i class="fab fa-instagram-square"></i> Istagram</a></li>
-			<li><a href="jti1@polije.ac.id" target="_blank"><i class="fas fa-envelope-square"></i> Email</a></li>
-			</ul>
-		</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-12">
-		<p class="copyright-text">&copy; 2021 Grup Riset dan Keahlian V Kecerdasan Buatan JTI - Politeknik Negeri Jember<p>
-		</div>
-	</div>
 	</div>
 </footer>
 <!-- End Footer -->
 
-	<!-- Start Scroll to top -->
-	<div class='ignielToTop'/>
-	<!-- End Scroll to top -->
+<!-- Start Scroll to top -->
+<div class='ignielToTop'/>
+<!-- End Scroll to top -->
 
 <!-- jquery js -->
 <script src="js/jquery.min.js"></script>
@@ -832,6 +928,8 @@
 <script src="js/scrollIt.min.js"></script>
 <!-- main js -->
 <script src="js/main.js"></script>
+<!-- Lightbox popup js -->
+<!-- <script src="js/lightbox-plus-jquery.js"></script> -->
 <!-- DataTables -->
 <script src="plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>

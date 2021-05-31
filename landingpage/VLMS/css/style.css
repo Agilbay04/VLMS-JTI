@@ -330,6 +330,17 @@ ul {
 	transform: scale(1);
 }
 
+.navbar .dropdown .dropdown-menu .dropdown-item.active {
+	background-color: var(--color-1);
+	box-shadow: var(--shadow-black-100);
+	transition: all 0.5s ease;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item:hover {
+	background-color: var(--color-1);
+	color: var(--black-000);
+}
+
 /* Home */
 .home {
 	min-height: 100vh;
@@ -434,7 +445,7 @@ ul {
 .home-tentang {
 	min-height: 100vh;
 	padding: 150px 0;
-	background-image: url('../img/kegiatan/Kegiatan\ 01.jpg');
+	background-image: url('../img/galeri/Kegiatan\ 01.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -705,13 +716,13 @@ ul {
 .anggota-dosen {
 	/* --bg-filter-opacity: 0.5; */
 	/* background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img); */
-	height: 20em;
-	width: 15em;
+	height: 13em;
+	width: 10em;
 	font-size: 1.5em;
 	color: transparent;
 	border-radius: 1em;
 	padding: 1em;
-	/*margin: 2em;*/
+	/* margin: 2em; */
 	display: flex;
 	align-items: flex-end;
 	background-size: cover;
@@ -729,7 +740,7 @@ ul {
 
 .anggota-dosen h1 {
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1em;
 	line-height: 1.2em;
 	font-weight: 900;
 }
@@ -1518,11 +1529,17 @@ table th {
 }
 
 .produk-item {
-	margin: 15px;
-	padding: 20px;
+	margin: 10px 0;
+	padding: 10px;
 	border-radius: 10px;
 	box-shadow: var(--shadow-black-100);
 	background-color: var(--black-000);
+	transition: all 0.5s ease;
+}
+
+.produk-item:hover {
+	transform-style: preserve-3d;
+	transform: scale(1.02);
 }
 
 .produk-item h3 {
@@ -1541,219 +1558,20 @@ table th {
 	text-transform: capitalize;
 }
 
+.produk-item span a {
+	text-decoration: none;
+	color: var(--color-1);
+}
+
 .produk-btn {
 	margin-top: 40px;
 }
 
-/* Faq */
-.faq {
-	background-color: var(--black-000);
-}
-
-.faq .accordion-item:not(:last-child) {
-	margin-bottom: 20px;
-}
-
-.faq .accordion-header {
-	box-shadow: var(--shadow-black-100);
-	padding: 20px 30px;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	position: relative;
-}
-
-.faq .accordion-header::before {
-	content: "\f067";
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	position: absolute;
-	height: 30px;
-	width: 30px;
-	right: 10px;
-	padding-left: 15px;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 16px;
-	text-align: 30px;
-	color: var(--black-400);
-	transition: all 0.5s ease;
-}
-
-.faq .accordion-header:not(.collapsed)::before {
-	content: "\f068";
-	color: #ffffff;
-}
-
-.faq .accordion-header:not(.collapsed) {
-	background-color: var(--main-color);
-}
-
-.faq .accordion-header h3 {
-	font-size: 18px;
-	font-weight: 600;
-	color: var(--black-400);
-	margin: 0;
-	transition: all 0.5s ease;
-}
-
-.faq .accordion-body {
-	padding: 20px 30px;
-	background-color: var(--black-100);
-}
-
-.faq .accordion-header:not(.collapsed) h3 {
-	color: #ffffff;
-}
-
-.faq .accordion-body p {
-	font-weight: 500;
-	font-size: 16px;
-	color: var(--black-400);
-	line-height: 26px;
-	margin: 0;
-}
-
-.faq .faq-btn {
-	margin-top: 40px;
-}
-
-/* Faq Detail */
-.home-faq {
+/* Detail Produk */
+.home-produk {
 	min-height: 100vh;
 	padding: 150px 0;
-	background-image: url('../img/faq.jpg');
-	background-position: top center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-}
-
-.home-faq::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-color: var(--main-to-dark-color);
-	opacity: 0.8;
-}
-
-.home-faq-text h1 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 5px;
-}
-
-.home-faq-text h2 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 20px;
-}
-
-.home-faq-text p {
-	font-size: 18px;
-	line-height: 28px;
-	color: #ffffff;
-	margin: 0;
-	font-weight: 300;
-
-}
-
-.home-faq-img img {
-	max-width: 250px;
-	width: 100%;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
-}
-
-.home-faq-img {
-	position: relative;
-}
-
-
-/* Kontak */
-.kontak {
-	background-color: var(--black-100);
-}
-
-.kontak-info h3 {
-	font-size: 22px;
-	color: var(--black-900);
-	font-weight: 700;
-	margin: 0 0 30px;
-}
-
-.kontak-info-item {
-	position: relative;
-	padding-left: 55px;
-	margin-bottom: 20px;
-}
-
-.kontak-info-item i {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	left: 0;
-	top: 0;
-	border-radius: 50%;
-	font-size: 16px;
-	color: var(--color-1);
-	border: 1px solid var(--color-1);
-	text-align: center;
-	line-height: 38px;
-}
-
-.kontak-info-item h4 {
-	font-size: 18px;
-	font-weight: 600;
-	margin: 0 0 10px;
-	color: var(--black-900);
-}
-
-.kontak-info-item p {
-	font-size: 16px;
-	font-weight: 500;
-	margin: 0;
-	line-height: 26px;
-	color: var(--black-400);
-}
-
-.kontak-form .form-group {
-	margin-bottom: 25px;
-}
-
-.kontak-form .form-control {
-	height: 52px;
-	border: 1px solid transparent;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 30px;
-	padding: 0 24px;
-	color: var(--black-900);
-	background-color: var(--black-000);
-	transition: all 0.5s ease;
-}
-
-.kontak-form textarea.form-control {
-	height: 140px;
-	padding-top: 12px;
-	resize: none;
-}
-
-.kontak-form .form-control:focus {
-	border-color: var(--color-1);
-}
-
-/* Kontak Detail */
-.home-kontak {
-	min-height: 100vh;
-	padding: 150px 0;
-	background-image: url('../img/kontak.jpg');
+	background-image: url('../img/produk.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -1761,7 +1579,7 @@ table th {
 	z-index: 1;
 }
 
-.home-kontak::before {
+.home-produk::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1773,60 +1591,28 @@ table th {
 	opacity: 0.8;
 }
 
-.home-kontak-text h1 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 5px;
-}
-
-.home-kontak-text h2 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 20px;
-}
-
-.home-kontak-text p {
-	font-size: 18px;
-	line-height: 28px;
-	color: #ffffff;
-	margin: 0;
-	font-weight: 300;
-
-}
-
-.home-kontak-img img {
+.home-produk-img img {
 	max-width: 250px;
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
 }
 
-.home-kontak-img {
+.home-produk-img {
 	position: relative;
 }
 
-.maps-garis {
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	position: relative;
-	height: 0;
+.produk-i .section-title h2 {
+	text-align: left;
 }
 
-.maps-garis iframe {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
+.produk-i .section-title i {
+	color: var(--color-1);
 }
 
-.maps-garis {
-	margin: 40px 0;
+.produk-i .produk-item {
+	box-shadow: var(--shadow-black-100);
 }
-
-
 
 /* Artikel-landing */
 .artikel-0 {
@@ -2278,6 +2064,328 @@ table th {
 
 .populer-card-detail:hover .details {
 	left: 0%;
+}
+
+/* Galeri foto */
+.galeri {
+	background-image: url('../img/code.jpg');
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.galeri::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.galeri .section-title h2 {
+	color: var(--black-000);
+}
+
+.art {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	transition: transform 1s;
+}
+
+.thumb {
+	overflow: hidden;
+}
+
+.art:hover{
+	transform: scale(1.2);
+}
+
+/* Faq */
+.faq {
+	background-color: var(--black-000);
+}
+
+.faq .accordion-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.faq .accordion-header {
+	box-shadow: var(--shadow-black-100);
+	padding: 20px 30px;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+.faq .accordion-header::before {
+	content: "\f067";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	right: 10px;
+	padding-left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 16px;
+	text-align: 30px;
+	color: var(--black-400);
+	transition: all 0.5s ease;
+}
+
+.faq .accordion-header:not(.collapsed)::before {
+	content: "\f068";
+	color: #ffffff;
+}
+
+.faq .accordion-header:not(.collapsed) {
+	background-color: var(--main-color);
+}
+
+.faq .accordion-header h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--black-400);
+	margin: 0;
+	transition: all 0.5s ease;
+}
+
+.faq .accordion-body {
+	padding: 20px 30px;
+	background-color: var(--black-100);
+}
+
+.faq .accordion-header:not(.collapsed) h3 {
+	color: #ffffff;
+}
+
+.faq .accordion-body p {
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--black-400);
+	line-height: 26px;
+	margin: 0;
+}
+
+.faq .faq-btn {
+	margin-top: 40px;
+}
+
+/* Faq Detail */
+.home-faq {
+	min-height: 100vh;
+	padding: 150px 0;
+	background-image: url('../img/faq.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.home-faq::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.home-faq-text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.home-faq-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.home-faq-text p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.home-faq-img img {
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 35px;
+	/* animation: bounceTop_01 3s ease infinite; */
+}
+
+.home-faq-img {
+	position: relative;
+}
+
+
+/* Kontak */
+.kontak {
+	background-color: var(--black-100);
+}
+
+.kontak-info h3 {
+	font-size: 22px;
+	color: var(--black-900);
+	font-weight: 700;
+	margin: 0 0 30px;
+}
+
+.kontak-info-item {
+	position: relative;
+	padding-left: 55px;
+	margin-bottom: 20px;
+}
+
+.kontak-info-item i {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	font-size: 16px;
+	color: var(--color-1);
+	border: 1px solid var(--color-1);
+	text-align: center;
+	line-height: 38px;
+}
+
+.kontak-info-item h4 {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0 0 10px;
+	color: var(--black-900);
+}
+
+.kontak-info-item p {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0;
+	line-height: 26px;
+	color: var(--black-400);
+}
+
+.kontak-form .form-group {
+	margin-bottom: 25px;
+}
+
+.kontak-form .form-control {
+	height: 52px;
+	border: 1px solid transparent;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 30px;
+	padding: 0 24px;
+	color: var(--black-900);
+	background-color: var(--black-000);
+	transition: all 0.5s ease;
+}
+
+.kontak-form textarea.form-control {
+	height: 140px;
+	padding-top: 12px;
+	resize: none;
+}
+
+.kontak-form .form-control:focus {
+	border-color: var(--color-1);
+}
+
+/* Kontak Detail */
+.home-kontak {
+	min-height: 100vh;
+	padding: 150px 0;
+	background-image: url('../img/kontak.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.home-kontak::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: var(--main-to-dark-color);
+	opacity: 0.8;
+}
+
+.home-kontak-text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.home-kontak-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.home-kontak-text p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.home-kontak-img img {
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-black-100);
+	border-radius: 35px;
+}
+
+.home-kontak-img {
+	position: relative;
+}
+
+.maps-garis {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+.maps-garis iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.maps-garis {
+	margin: 40px 0;
 }
 
 /* Footer */
