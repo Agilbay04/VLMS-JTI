@@ -54,7 +54,7 @@
                                 <select name="kelompok" id="" class="form-control">
                                     <?php foreach ($kelompok as $kelompoks) {
                                     ?>
-                                        <option value="<?= $kelompoks->id ?>"><?= $kelompoks->nama_grup; ?></option>
+                                        <option value="<?= $kelompoks->id_grup ?>"><?= $kelompoks->nama_grup; ?></option>
                                     <?php }
                                     ?>
                                 </select>
