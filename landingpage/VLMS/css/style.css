@@ -276,6 +276,13 @@ ul {
 	background-color: var(--main-color);
 }
 
+/* Login Page */
+.login {
+	background-color: var(--main-color);
+}
+
+/* End Login Page */
+
 /* Navbar */
 .navbar {
 	background-color: transparent;
@@ -340,6 +347,7 @@ ul {
 	background-color: var(--color-1);
 	color: var(--black-000);
 }
+/* End Navbar */
 
 /* Home */
 .home {
@@ -440,6 +448,7 @@ ul {
 	transform-origin: 170px 170px;
 	animation: spin_01 10s linear infinite;
 }
+/* End Home */
 
 /* Tentang */
 .home-tentang {
@@ -493,7 +502,6 @@ ul {
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
 }
 
 .home-tentang-img {
@@ -539,7 +547,6 @@ ul {
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
 }
 
 .tentang-text p {
@@ -549,6 +556,7 @@ ul {
 	margin: 0 0 15px;
 	font-weight: 300;
 }
+/* End Tentang */
 
 /* Tentang Detail */
 .tentang-detail {
@@ -829,33 +837,9 @@ ul {
 	font-size: 1em;
 	font-weight: normal;
 }
+/* End Tentang Detail */
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 900px) {
-	.info {
-		justify-content: center;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.projek-dosen {
-		max-width: calc(100vw - 4rem);
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.info {
-		display: block;
-		text-align: center;
-	}
-
-	.info h1 {
-		margin: 0;
-	}
-}
-
-
-/* Vlms */
+/* VLMS */
 .vlms {
 	background-color: var(--black-100);
 }
@@ -972,6 +956,7 @@ ul {
 .vlms .vlms-btn {
 	margin-top: 40px;
 }
+/* End VLMS */
 
 /* VLMS Detail */
 .home-vlms {
@@ -1091,7 +1076,7 @@ ul {
 	color: var(--black-400);
 	margin: 0 0 15px;
 }
-
+/* End VLMS Detail */
 
 /* Projek */
 .projek {
@@ -1132,6 +1117,7 @@ ul {
 	transition: all 0.5s ease;
 	border-radius: 30px;
 }
+/* End Projek */
 
 /* Projek Detail */
 .home-projek {
@@ -1185,62 +1171,12 @@ ul {
 	width: 100%;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
 }
 
 .home-projek-img {
 	position: relative;
 }
-
-/* tabel dosen */
-.rspv-tabel {
-	overflow-x: auto;
-}
-
-.rspv-tabel thead tr,
-table tr:nth-child(2n) {
-	background: #ecf0f1;
-}
-
-.rspv-tabel table {
-	width: 100%;
-	background: #f7f9fa;
-	border-spacing: 0;
-	border-collapse: collapse;
-	overflow: hidden;
-}
-
-.rspv-tabel table caption {
-	font-size: 18px;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 10px 0;
-}
-
-.rspv-tabel table td,
-table th {
-	padding: 8px 10px;
-	text-align: left;
-	border: 1px solid #dedede;
-	font-family: sans-serif;
-}
-
-.rspv-tabel table tr:hover {
-	background: #fff;
-}
-
-@media screen and (max-width:800px) {
-	.rspv-tabel {
-		overflow-y: hidden;
-		-ms-overflow-style: -ms-autohiding-scrollbar;
-	}
-
-	.rspv-tabel table td,
-	table th {
-		white-space: nowrap;
-	}
-}
-
+/* End Projek Dosen */
 
 /* E-Resources */
 .home-eresources {
@@ -1501,6 +1437,7 @@ table th {
 	background-color: var(--color-1);
 	box-shadow: var(--shadow-black-300);
 }
+/* End E-Resources */
 
 /* Produk & Aplikasi */
 .produk {
@@ -1566,6 +1503,7 @@ table th {
 .produk-btn {
 	margin-top: 40px;
 }
+/* End Produk */
 
 /* Detail Produk */
 .home-produk {
@@ -1613,6 +1551,7 @@ table th {
 .produk-i .produk-item {
 	box-shadow: var(--shadow-black-100);
 }
+/* End Detail Produk */
 
 /* Artikel-landing */
 .artikel-0 {
@@ -1903,6 +1842,7 @@ table th {
 	box-shadow: var(--shadow-black-300);
 	transition: all 0.5s ease;
 }
+/* End Artikel */
 
 /* Detail artikel */
 .card-artikel-detail .artikel-title {
@@ -2065,6 +2005,7 @@ table th {
 .populer-card-detail:hover .details {
 	left: 0%;
 }
+/* End Detail Artikel */
 
 /* Galeri foto */
 .galeri {
@@ -2106,6 +2047,7 @@ table th {
 .art:hover{
 	transform: scale(1.2);
 }
+/* End Galeri foto */
 
 /* Faq */
 .faq {
@@ -2178,66 +2120,7 @@ table th {
 .faq .faq-btn {
 	margin-top: 40px;
 }
-
-/* Faq Detail */
-.home-faq {
-	min-height: 100vh;
-	padding: 150px 0;
-	background-image: url('../img/faq.jpg');
-	background-position: top center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-}
-
-.home-faq::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-color: var(--main-to-dark-color);
-	opacity: 0.8;
-}
-
-.home-faq-text h1 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 5px;
-}
-
-.home-faq-text h2 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 20px;
-}
-
-.home-faq-text p {
-	font-size: 18px;
-	line-height: 28px;
-	color: #ffffff;
-	margin: 0;
-	font-weight: 300;
-
-}
-
-.home-faq-img img {
-	max-width: 250px;
-	width: 100%;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 35px;
-	/* animation: bounceTop_01 3s ease infinite; */
-}
-
-.home-faq-img {
-	position: relative;
-}
-
+/* End Faq */
 
 /* Kontak */
 .kontak {
@@ -2311,64 +2194,6 @@ table th {
 	border-color: var(--color-1);
 }
 
-/* Kontak Detail */
-.home-kontak {
-	min-height: 100vh;
-	padding: 150px 0;
-	background-image: url('../img/kontak.jpg');
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-}
-
-.home-kontak::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-color: var(--main-to-dark-color);
-	opacity: 0.8;
-}
-
-.home-kontak-text h1 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 5px;
-}
-
-.home-kontak-text h2 {
-	font-size: 45px;
-	font-weight: 700;
-	color: #ffffff;
-	margin: 0 0 20px;
-}
-
-.home-kontak-text p {
-	font-size: 18px;
-	line-height: 28px;
-	color: #ffffff;
-	margin: 0;
-	font-weight: 300;
-
-}
-
-.home-kontak-img img {
-	max-width: 250px;
-	width: 100%;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 35px;
-}
-
-.home-kontak-img {
-	position: relative;
-}
-
 .maps-garis {
 	overflow: hidden;
 	padding-bottom: 56.25%;
@@ -2387,6 +2212,7 @@ table th {
 .maps-garis {
 	margin: 40px 0;
 }
+/* End Kontak */
 
 /* Footer */
 .footer {
@@ -2446,6 +2272,7 @@ table th {
 	margin: 50px 0 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+/* End Footer */
 
 /* Scroll to top */
 .ignielToTop {
@@ -2475,8 +2302,9 @@ table th {
 	bottom: 20px;
 	opacity: 1;
 }
+/* End Scroll Top */
 
-/* Responsive */
+/* MEDIA QUERIES (RESPONSIVE DESIGN) */
 @media(max-width: 991px) {
 	.navbar-toggler {
 		background-color: var(--color-1);
@@ -2533,6 +2361,10 @@ table th {
 
 	.footer-col {
 		margin-bottom: 30px;
+	}
+
+	.info {
+		justify-content: center;
 	}
 }
 
@@ -2680,4 +2512,18 @@ table th {
 	.card-artikel-detail .artikel-text {
 		font-size: 14px;
 	}
+
+	.projek-dosen {
+		max-width: calc(100vw - 4rem);
+	}
+
+	.info {
+		display: block;
+		text-align: center;
+	}
+
+	.info h1 {
+		margin: 0;
+	}
 }
+/* End MEDIA QUERIES (RESPONSIVE DESIGN) */
