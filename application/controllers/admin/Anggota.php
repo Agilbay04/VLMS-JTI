@@ -34,9 +34,11 @@ class Anggota extends CI_Controller
             $file = $this->upload->data();
             $nama = $this->input->post('nama');
             $bidang = $this->input->post('bidang');
+            $no_identitas = $this->input->post('no_identitas');
+            $password = $this->input->post('password');
             $status = $this->input->post('status');
             $kelompok = $this->input->post('kelompok');
-            $data = ['gambar' => $file['file_name'], 'bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok];
+            $data = ['gambar' => $file['file_name'], 'bidang' => $bidang, 'nama_anggota' => $nama, 'no_identitas' => $no_identitas, 'status' => $status, 'id_grup' => $kelompok, 'password' => $password];
             $this->M_admin->insertdata('anggota', $data);
             redirect(base_url('admin/anggota/'));
         }
@@ -54,9 +56,11 @@ class Anggota extends CI_Controller
         if (empty($gambar)) {
             $nama = $this->input->post('nama');
             $bidang = $this->input->post('bidang');
+            $no_identitas = $this->input->post('no_identitas');
+            $password = $this->input->post('password');
             $status = $this->input->post('status');
             $kelompok = $this->input->post('kelompok');
-            $data = ['bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok];
+            $data = ['bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok, 'password' => $password,$no_identitas = $this->input->post('no_identitas');];
             $this->M_admin->updatedata('anggota', ['id_anggota' =>  $this->input->post('kode')], $data);
             redirect(base_url('admin/anggota/'));
         } else {
@@ -77,8 +81,10 @@ class Anggota extends CI_Controller
                 $nama = $this->input->post('nama');
                 $bidang = $this->input->post('bidang');
                 $status = $this->input->post('status');
+                $no_identitas = $this->input->post('no_identitas');
+                $password = $this->input->post('password');
                 $kelompok = $this->input->post('kelompok');
-                $data = ['gambar' => $file['file_name'], 'bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok];
+                $data = ['gambar' => $file['file_name'], 'bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok, 'no_identitas' => $no_identitas, 'password' => $password];
                 $this->M_admin->updatedata('anggota', ['id_anggota' =>  $this->input->post('kode')], $data);
                 redirect(base_url('admin/pembicara/'));
             }

@@ -36,20 +36,24 @@
                                         <th>#</th>
                                         <th>Gambar</th>
                                         <th>Nama Anggota</th>
+                                        <th>No Identitas</th>
+                                        <th>Bidang</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($anggota as $index => $anggota) {
+                                    <?php foreach ($anggota as $index => $anggotas) {
                                     ?>
                                         <tr>
                                             <td><?= $index + 1; ?></td>
-                                            <td> <img src="<?= base_url('img/anggota/') . $anggota->gambar ?>" alt="" srcset="" style="max-width: 300px;max-height: 300px;"></td>
-                                            <td><?= $anggota->nama_anggota; ?></td>
-                                            <td><?= $anggota->status; ?></td>
+                                            <td> <img src="<?= base_url('img/anggota/') . $anggotas->gambar ?>" alt="" srcset="" style="max-width: 250px;max-height: 250px;"></td>
+                                            <td><?= $anggotas->nama_anggota; ?></td>
+                                            <td><?= $anggotas->no_identitas; ?></td>
+                                            <td><?= $anggotas->bidang ?></td>
+                                            <td><?= $anggotas->status; ?></td>
                                             <td>
-                                                <a href="<?= base_url('admin/anggota/edit/') . $anggota->id_anggota ?>" class="btn btn-primary mx-3">Edit</a>
+                                                <a href="<?= base_url('admin/anggota/edit/') . $anggotas->id_anggota ?>" class="btn btn-primary mx-3">Edit</a>
                                                 <a href="" class="btn btn-danger">Hapus</a>
                                             </td>
                                         </tr>

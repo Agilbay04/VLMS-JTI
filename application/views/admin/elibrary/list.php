@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Artikel</h1>
+                    <h1>E-Library</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Artikel</li>
+                        <li class="breadcrumb-item active">E-Library</li>
                     </ol>
                 </div>
             </div>
@@ -23,9 +23,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Data Artikel</h3>
+                            <h3 class="card-title">Data E-Library</h3>
                             <div class="text-right">
-                                <a href="<?= base_url('admin/artikel/new') ?>" class="btn btn-primary">Tambah Artikel</a>
+                                <a href="<?= base_url('admin/elibrary/new') ?>" class="btn btn-primary">Tambah Resource</a>
                             </div>
                         </div>
                         <!-- /.card-header -->
@@ -34,30 +34,21 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Gambar</th>
                                         <th>Judul</th>
-                                        <th>Tanggal</th>
-                                        <th>Status</th>
-                                        <th>Kategori</th>
+                                        <th>Link</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($artikel as $index => $artikels) { ?>
+                                    <?php foreach ($elibrary as $index => $elibrarys) {
+                                    ?>
                                         <tr>
                                             <td><?= $index + 1; ?></td>
-                                            <td><img src="<?= base_url('img/artikel/') . $artikels->gambar ?>" style="max-width: 200px;max-height:200px;"></td>
-                                            <td><?= $artikels->judul; ?></td>
-                                            <td><?= $artikels->tanggal; ?></td>
-                                            <td><?php if ($artikels->status_artikel == '1') { ?>
-                                                    <span class="badge badge-success">Publish</span>
-                                                <?php } elseif ($artikels->status_artikel == '0') { ?>
-                                                    <span class="badge badge-secondary">Arsip</span>
-                                                <?php } ?>
-                                            </td>
-                                            <td><?= $artikels->nama_kategori; ?></td>
-                                            <td><a href="<?= base_url('admin/artikel/edit/') . $artikels->id ?>" class="btn btn-primary mx-3">Edit</a>
-                                                <a href="" class="btn btn-danger">Hapus</a>
+                                            <td><?= $elibrarys->judul; ?></td>
+                                            <td><?= $elibrarys->link; ?></td>
+                                            <td>
+                                                <a href="<?= base_url('admin/elibrary/edit/') . $elibrarys->id_library ?>" class="btn btn-primary mx-3">Edit</a>
+                                                <a href="<?= base_url('admin/elibrary/hapus/') . $elibrarys->id_library ?>" class="btn btn-danger">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php } ?>
