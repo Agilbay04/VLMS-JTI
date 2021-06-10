@@ -278,7 +278,23 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-header">EXAMPLES</li>
+                        <li class="nav-header">VLMS</li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/elibrary') ?>" class="nav-link">
+                                <i class="nav-icon fas fa-newspaper"></i>
+                                <p>
+                                    E-Library
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/alat') ?>" class="nav-link">
+                                <i class="nav-icon fas fa-newspaper"></i>
+                                <p>
+                                    Alat
+                                </p>
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a href="pages/calendar.html" class="nav-link">
                                 <i class="nav-icon far fa-calendar-alt"></i>
