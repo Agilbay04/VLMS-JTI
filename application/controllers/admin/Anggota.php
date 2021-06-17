@@ -60,7 +60,7 @@ class Anggota extends CI_Controller
             $password = $this->input->post('password');
             $status = $this->input->post('status');
             $kelompok = $this->input->post('kelompok');
-            $data = ['bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok, 'password' => $password,$no_identitas = $this->input->post('no_identitas');];
+            $data = ['bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok, 'password' => $password, $no_identitas = $this->input->post('no_identitas')];
             $this->M_admin->updatedata('anggota', ['id_anggota' =>  $this->input->post('kode')], $data);
             redirect(base_url('admin/anggota/'));
         } else {
