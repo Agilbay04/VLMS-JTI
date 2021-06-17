@@ -30,29 +30,39 @@
                     <!-- /.card-header -->
                     <div class="card-body pad">
                         <form action="<?= base_url('admin/anggota/simpan') ?>" method="post" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <label for="exampleFormControlFile1">Gambar</label>
-                                <input type="file" class="form-control-file" name="gambar">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Nama Anggota</label>
-                                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Bidang</label>
-                                <input type="text" class="form-control" name="bidang" placeholder="Masukkan Bidang Keahlian">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Kelompok</label>
-                                <select name="kelompok" id="" class="form-control">
-                                    <?php foreach ($kelompok as $kelompoks) { ?>
-                                        <option value="<?= $kelompoks->id_grup ?>"><?= $kelompoks->nama_grup; ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Status</label>
-                                <input type="text" class="form-control" name="status" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Status Anggota">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <label for="exampleFormControlFile1">Gambar</label>
+                                    <input type="file" class="form-control-file" name="gambar">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="exampleInputEmail1">Nama Anggota</label>
+                                    <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Bidang</label>
+                                    <input type="text" class="form-control" name="bidang" placeholder="Masukkan Bidang Keahlian">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">No Identitas</label>
+                                    <input type="text" class="form-control" name="no_identitas" placeholder="Masukkan No Identitas">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="exampleInputEmail1">Kelompok</label>
+                                    <select name="kelompok" id="" class="form-control">
+                                        <?php foreach ($kelompok as $kelompoks) { ?>
+                                            <option value="<?= $kelompoks->id_grup ?>"><?= $kelompoks->nama_grup; ?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Status</label>
+                                    <input type="text" class="form-control" name="status" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Status Anggota">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Password</label>
+                                    <input type="text" class="form-control" name="password" placeholder="Masukkan Password Anggota">
+                                </div>
                             </div>
                             <div class="text-right">
                                 <button class="btn btn-danger mr-3">Cancel</button>

@@ -68,7 +68,7 @@
                                 <select name="kategori" id="" class="form-control">
                                     <?php foreach ($kategori as $kategories) {
                                     ?>
-                                        <option value="<?= $kategories->id ?>"><?= $kategories->nama_kategori; ?></option>
+                                        <option value="<?= $kategories->id_kategori ?>"><?= $kategories->nama_kategori; ?></option>
                                     <?php
                                     } ?>
                                 </select>

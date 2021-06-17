@@ -24,6 +24,9 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Data Artikel</h3>
+                            <div class="text-right">
+                                <a href="<?= base_url('admin/artikel/new') ?>" class="btn btn-primary">Tambah Artikel</a>
+                            </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body table-responsive p-0">
@@ -34,6 +37,7 @@
                                         <th>Gambar</th>
                                         <th>Judul</th>
                                         <th>Tanggal</th>
+                                        <th>Status</th>
                                         <th>Kategori</th>
                                         <th>Action</th>
                                     </tr>
@@ -45,6 +49,12 @@
                                             <td><img src="<?= base_url('img/artikel/') . $artikels->gambar ?>" style="max-width: 200px;max-height:200px;"></td>
                                             <td><?= $artikels->judul; ?></td>
                                             <td><?= $artikels->tanggal; ?></td>
+                                            <td><?php if ($artikels->status_artikel == '1') { ?>
+                                                    <span class="badge badge-success">Publish</span>
+                                                <?php } elseif ($artikels->status_artikel == '0') { ?>
+                                                    <span class="badge badge-secondary">Arsip</span>
+                                                <?php } ?>
+                                            </td>
                                             <td><?= $artikels->nama_kategori; ?></td>
                                             <td><a href="<?= base_url('admin/artikel/edit/') . $artikels->id ?>" class="btn btn-primary mx-3">Edit</a>
                                                 <a href="" class="btn btn-danger">Hapus</a>
