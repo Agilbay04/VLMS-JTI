@@ -72,24 +72,24 @@
 <!-- End Scroll to top -->
 
 <!-- jquery js -->
-<script src="<?= base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/js/jquery.min.js"></script>
 <!-- popper js -->
-<script src="<?= base_url(); ?>assets/js/popper.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/js/popper.min.js"></script>
 <!-- bootstrap js -->
-<script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/js/bootstrap.min.js"></script>
 <!-- owl carousel js -->
-<script src="<?= base_url(); ?>assets/js/owl.carousel.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/js/owl.carousel.min.js"></script>
 <!-- ScrollIt js -->
-<script src="<?= base_url(); ?>assets/js/scrollIt.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/js/scrollIt.min.js"></script>
 <!-- main js -->
-<script src="<?= base_url(); ?>assets/js/main.js"></script>
+<script src="<?= base_url(); ?>assets/dist/js/main.js"></script>
 <!-- Lightbox popup js -->
 <!-- <script src="js/lightbox-plus-jquery.js"></script> -->
 <!-- DataTables -->
-<script src="<?= base_url(); ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url(); ?>assets/dist/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script>
 	$(function () {
 		$("#table-1").DataTable({

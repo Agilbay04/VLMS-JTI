@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
 	<div class="container">
 		<a class="navbar-brand" href="index.html">
-			<img src="img/navbar-brand.svg" width="300" class="d-inline-block align-center" alt="VLMS">
+			<img src="<?= base_url(); ?>assets/dist/img/navbar-brand.svg" width="300" class="d-inline-block align-center" alt="VLMS">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fas fa-bars"></i>
@@ -27,7 +27,7 @@
 				Publikasi
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="pages/eresources.html">E-resouces & E-book</a>
+					<a class="dropdown-item" href="<?= base_url('landingpage/elibrary'); ?>">E-library</a>
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="#" data-scroll-nav="4">Produk & Aplikasi</a>
 					<div class="dropdown-divider"></div>
@@ -43,7 +43,7 @@
 				<a class="nav-link" href="#" data-scroll-nav="8">Kontak</a>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-sm-2 login-btn" href="auth/login.html">Login</a>
+				<a class="btn btn-sm-2 login-btn" href="<?= base_url('auth/login'); ?>">Login</a>
 			</li>
 			</ul>
 		</div>

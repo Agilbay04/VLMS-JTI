@@ -13,13 +13,13 @@
 					</p>
 					<div class="home-btn">
 						<a href="#" class="btn btn-1" data-scroll-goto="2">Selengkapnya</a>
-						<button type="button" class="btn btn-2 join">Join Us!</button>
+						<button type="button" class="btn btn-2 join" data-scroll-goto="3">Join Us!</button>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-5 text-center">
 				<div class="home-img">
-					<img src="img/polije.png" alt="polije">
+					<img src="<?= base_url(); ?>assets/dist/img/polije.png" alt="polije">
 				</div>
 			</div>
 		</div>
@@ -89,7 +89,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="vlms-btn">
-				<a href="auth/login.html" class="btn btn-2 align-items-center">
+				<a href="<?= base_url('auth/login'); ?>" class="btn btn-2 align-items-center">
 					Login Sekarang
 					<i class="fas fa-arrow-right pl-2"></i>
 				</a>
@@ -105,7 +105,7 @@
 		<div class="row align-items-top">
 			<div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center">
 				<div class="tentang-img">
-					<img src="img/lab/lab-rsi.jpg" class="img-fluid img-responsive" alt="lab-rsi">
+					<img src="<?= base_url(); ?>assets/dist/img/lab/lab-rsi.jpg" class="img-fluid img-responsive" alt="lab-rsi">
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-7">
@@ -123,7 +123,7 @@
 					</p>
 				</div>
 				<div class="tentang-btn">
-					<a href="pages/tentang.html" class="btn btn-2">Selengkapnya</a>
+					<a href="<?= base_url('landingpage/tentang'); ?>" class="btn btn-2">Selengkapnya</a>
 				</div>
 			</div>
 		</div>
@@ -355,7 +355,7 @@
 		<div class="row">
 			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/produk.jpg" alt="produk">
+					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
 					<h3>Aplikasi 1</h3>
 					<span>
 						<a href="#">
@@ -367,7 +367,7 @@
 			</div>
 			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/produk.jpg" alt="produk">
+					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
 					<h3>Aplikasi 2</h3>
 					<span>
 						<a href="#">
@@ -379,7 +379,7 @@
 			</div>
 			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/produk.jpg" alt="produk">
+					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
 					<h3>Aplikasi 3</h3>
 					<span>
 						<a href="#">
@@ -391,7 +391,7 @@
 			</div>
 			<div class="col-md-7 col-lg-3">
 				<div class="produk-item">
-					<img src="img/produk.jpg" alt="produk">
+					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
 					<h3>Aplikasi 4</h3>
 					<span>
 						<a href="#">
@@ -404,7 +404,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
-				<a href="pages/produk.html" class="btn btn-2">Selengkapnya</a>
+				<a href="<?= base_url('landingpage/produk'); ?>" class="btn btn-2">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -426,7 +426,7 @@
 				<div class="fitur-item">
 					<div class="populer-card-detail mb-2">
 						<div class="meta">
-							<div class="photo" style="background-image: url(img/artikel.jpg)"></div>
+							<div class="photo" style="background-image: url(<?= base_url(); ?>assets/dist/img/artikel.jpg)"></div>
 							<ul class="details">
 								<li class="author">
 									<a href="#">
@@ -461,7 +461,7 @@
 				<div class="fitur-item">
 					<div class="populer-card-detail mb-2">
 						<div class="meta">
-							<div class="photo" style="background-image: url(img/jurnal.jpg)"></div>
+							<div class="photo" style="background-image: url(<?= base_url(); ?>assets/dist/img/jurnal.jpg)"></div>
 							<ul class="details">
 								<li class="author">
 									<a href="#">
@@ -496,7 +496,7 @@
 				<div class="fitur-item">
 					<div class="populer-card-detail mb-2">
 						<div class="meta">
-							<div class="photo" style="background-image: url(img/artikel.jpg)"></div>
+							<div class="photo" style="background-image: url(<?= base_url(); ?>assets/dist/img/artikel.jpg)"></div>
 							<ul class="details">
 								<li class="author">
 									<a href="#">
@@ -530,7 +530,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
-				<a href="pages/artikel.html" class="btn btn-2">Selengkapnya</a>
+				<a href="<?= base_url('landingpage/artikel'); ?>" class="btn btn-2">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -549,43 +549,43 @@
 		</div>
 		<div class="row justify-content-center no-gutters">
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 01.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 1">
-					<img src="img/galeri/Kegiatan 01.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 01.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 1">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 01.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 02.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 2">
-					<img src="img/galeri/Kegiatan 02.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 02.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 2">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 02.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 03.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 3">
-					<img src="img/galeri/Kegiatan 03.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 03.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 3">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 03.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 04.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 4">
-					<img src="img/galeri/Kegiatan 04.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 04.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 4">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 04.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 05.jpg.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 5">
-					<img src="img/galeri/Kegiatan 05.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 05.jpg.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 5">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 05.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 06.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 6">
-					<img src="img/galeri/Kegiatan 06.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 06.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 6">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 06.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 07.jpg.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 7">
-					<img src="img/galeri/Kegiatan 07.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 07.jpg.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 7">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 07.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="img/galeri/Kegiatan 08.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 8">
-					<img src="img/galeri/Kegiatan 08.jpg" class="art img-fluid" alt="">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 08.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 8">
+					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 08.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 		</div>
