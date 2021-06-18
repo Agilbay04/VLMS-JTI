@@ -43,7 +43,7 @@
 					<a class="nav-link" href="<?= base_url('landingpage/home'); ?>">Kontak</a>
 				</li>
 				<li class="nav-item">
-					<a class="btn btn-sm-2 login-btn" href="#">Login</a>
+					<a class="btn btn-sm-2 login-btn text-uppercase" href="#">Login</a>
 				</li>
 			</ul>
 		</div>

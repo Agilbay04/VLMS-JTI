@@ -8,12 +8,12 @@
 					<h2>Kecerdasan Buatan</h2>
 					<div class="dropdown-divider"></div>
 					<p>Laboratorium Rekayasa Sistem Informasi <br>
-					Jurusan Teknologi Informasi <br>
-					Politeknik Negeri Jember Kampus I Jember, Indonesia.
+						Jurusan Teknologi Informasi <br>
+						Politeknik Negeri Jember Kampus I Jember, Indonesia.
 					</p>
 					<div class="home-btn">
-						<a href="#" class="btn btn-1" data-scroll-goto="2">Selengkapnya</a>
-						<button type="button" class="btn btn-2 join" data-scroll-goto="3">Join Us!</button>
+						<a href="#" class="btn btn-1 text-uppercase" data-scroll-goto="2">Tentang Kami</a>
+						<button type="button" class="btn btn-2 join text-uppercase" onclick="join()" data-scroll-goto="3">Join Us!</button>
 					</div>
 				</div>
 			</div>
@@ -32,9 +32,9 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
-			<div class="section-title">
-				<h2>Virtual Lab <span>Management System</span></h2>
-			</div>
+				<div class="section-title">
+					<h2>Virtual Lab <span>Management System</span></h2>
+				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -74,22 +74,24 @@
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-book"></i></div>
 					<h3>E-Library</h3>
-					<p>Kumpulan e-resources/e-book yang dimiliki oleh Garis<p>
-					<!-- <a href="#" class="btn btn-2">Selengkapnya</a> -->
-				</div> 
+					<p>Kumpulan e-resources/e-book yang dimiliki oleh Garis
+					<p>
+						<!-- <a href="#" class="btn btn-2">Selengkapnya</a> -->
+				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="fitur-item">
 					<div class="icon"><i class="fas fa-mobile"></i></div>
 					<h3>Pameran Produk & Aplikasi</h3>
-					<p>Kumpulan produk/aplikasi unggulan hasil riset Garis<p>
-					<!-- <a href="#" class="btn btn-2">Selengkapnya</a> -->
-				</div> 
+					<p>Kumpulan produk/aplikasi unggulan hasil riset Garis
+					<p>
+						<!-- <a href="#" class="btn btn-2">Selengkapnya</a> -->
+				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="vlms-btn">
-				<a href="<?= base_url('auth/login'); ?>" class="btn btn-2 align-items-center">
+				<a href="<?= base_url('auth/login'); ?>" class="btn btn-2 text-uppercase align-items-center">
 					Login Sekarang
 					<i class="fas fa-arrow-right pl-2"></i>
 				</a>
@@ -114,16 +116,16 @@
 				</div>
 				<div class="tentang-text">
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quod cumque 
-						corrupti doloribus consequuntur molestias quae quaerat. Vitae porro voluptatum 
-						suscipit non. Aliquid mollitia amet optio sit iste aperiam ipsa Lorem ipsum dolor 
-						sit amet consectetur adipisicing elit. Pariatur, officia quae a nulla, aliquid iste 
-						adipisci excepturi eligendi quos quaerat asperiores modi illum dolores provident explicabo 
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quod cumque
+						corrupti doloribus consequuntur molestias quae quaerat. Vitae porro voluptatum
+						suscipit non. Aliquid mollitia amet optio sit iste aperiam ipsa Lorem ipsum dolor
+						sit amet consectetur adipisicing elit. Pariatur, officia quae a nulla, aliquid iste
+						adipisci excepturi eligendi quos quaerat asperiores modi illum dolores provident explicabo
 						maxime natus, ullam quibusdam.
 					</p>
 				</div>
 				<div class="tentang-btn">
-					<a href="<?= base_url('landingpage/tentang'); ?>" class="btn btn-2">Selengkapnya</a>
+					<a href="<?= base_url('landingpage/tentang'); ?>" class="btn btn-2 text-uppercase">Selengkapnya</a>
 				</div>
 			</div>
 		</div>
@@ -144,12 +146,12 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<!-- List dosen -->
-                <div class="card card-kategori mb-4">
-                    <h5 class="card-header font-weight-bold bg-main-color text-white">
-                        <i class="fas fa-user-tie text-color-1 pr-2"></i> 
+				<div class="card card-kategori mb-4">
+					<h5 class="card-header font-weight-bold bg-main-color text-white">
+						<i class="fas fa-user-tie text-color-1 pr-2"></i>
 						Dosen
-                    </h5>
-                    <div class="card-body list-dosen">
+					</h5>
+					<div class="card-body list-dosen">
 						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 							<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#dosen-1" role="tab" aria-controls="v-pills-home" aria-selected="true">
 								<i class="fas fa-dot-circle pr-2"></i>
@@ -165,21 +167,21 @@
 							</a>
 						</div>
 					</div>
-                </div>
+				</div>
 				<!-- End list dosen -->
 			</div>
-			
+
 			<div class="col-lg-8">
 				<!-- List projek -->
 				<div class="card card-kategori mb-4">
 					<h5 class="card-header font-weight-bold bg-main-color text-white">
-						<i class="fas fa-project-diagram text-color-1 pr-2"></i> 
+						<i class="fas fa-project-diagram text-color-1 pr-2"></i>
 						Projek
 					</h5>
 					<!-- Item projek -->
 					<div class="card-body">
 						<div class="tab-content" id="v-pills-tabContent">
-							<div class="tab-pane fade show active" id="dosen-1" role="tabpanel" aria-labelledby="v-pills-home-tab">	
+							<div class="tab-pane fade show active" id="dosen-1" role="tabpanel" aria-labelledby="v-pills-home-tab">
 								<table id="table-1" class="table table-bordered table-striped">
 									<thead>
 										<tr>
@@ -194,27 +196,27 @@
 										<tr>
 											<td class="text-center">1</td>
 											<td>Internet
-											Explorer 5.5
+												Explorer 5.5
 											</td>
 											<td class="text-center">
 												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-secondary">close</span>
 											</td>
 											<td>Win 95+</td>
 											<td class="text-center">
-												<button class="btn btn-sm-2 btn-disabled" type="submit">Apply</button>
+												<button class="btn btn-sm-2 text-uppercase btn-disabled" data-toggle="modal" data-target="#applyform" type="submit">Apply</button>
 											</td>
 										</tr>
 										<tr>
 											<td class="text-center">2</td>
 											<td>Internet
-											Explorer 5.5
+												Explorer 5.5
 											</td>
 											<td class="text-center">
 												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-success">open</span>
 											</td>
 											<td>Win 95+</td>
 											<td class="text-center">
-												<button class="btn btn-sm-2" type="submit">Apply</button>
+												<button class="btn btn-sm-2 text-uppercase" type="submit">Apply</button>
 											</td>
 										</tr>
 									</tbody>
@@ -229,8 +231,8 @@
 									</tfoot>
 								</table>
 							</div>
-						
-							<div class="tab-pane fade" id="dosen-2" role="tabpanel" aria-labelledby="v-pills-profile-tab">	
+
+							<div class="tab-pane fade" id="dosen-2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 								<table id="table-2" class="table table-bordered table-striped">
 									<thead>
 										<tr>
@@ -245,40 +247,40 @@
 										<tr>
 											<td class="text-center">1</td>
 											<td>Internet
-											Explorer 5.5
+												Explorer 5.5
 											</td>
 											<td class="text-center">
 												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-secondary">close</span>
 											</td>
 											<td>Win 95+</td>
 											<td class="text-center">
-												<button class="btn btn-sm-2 btn-disabled" type="submit">Apply</button>
+												<button class="btn btn-sm-2 text-uppercase btn-disabled" type="submit">Apply</button>
 											</td>
 										</tr>
 										<tr>
 											<td class="text-center">2</td>
 											<td>Internet
-											Explorer 5.5
+												Explorer 5.5
 											</td>
 											<td class="text-center">
 												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-success">open</span>
 											</td>
 											<td>Win 95+</td>
 											<td class="text-center">
-												<button class="btn btn-sm-2" type="submit">Apply</button>
+												<button class="btn btn-sm-2 text-uppercase" type="submit">Apply</button>
 											</td>
 										</tr>
 										<tr>
 											<td class="text-center">3</td>
 											<td>Internet
-											Explorer 5.5
+												Explorer 5.5
 											</td>
 											<td class="text-center">
 												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-secondary">close</span>
 											</td>
 											<td>Win 95+</td>
 											<td class="text-center">
-												<button class="btn btn-sm-2 btn-disabled" type="submit">Apply</button>
+												<button class="btn btn-sm-2 text-uppercase btn-disabled" type="submit">Apply</button>
 											</td>
 										</tr>
 									</tbody>
@@ -309,14 +311,14 @@
 										<tr>
 											<td class="text-center">1</td>
 											<td>Internet
-											Explorer 5.5
+												Explorer 5.5
 											</td>
 											<td>Win 95+</td>
 											<td class="text-center">
 												<span style="box-shadow: var(--shadow-black-300);" class="badge badge-success">open</span>
 											</td>
 											<td class="text-center">
-												<button class="btn btn-sm-2" type="submit">Apply</button>
+												<button class="btn btn-sm-2 text-uppercase" type="submit">Apply</button>
 											</td>
 										</tr>
 									</tbody>
@@ -359,7 +361,7 @@
 					<h3>Aplikasi 1</h3>
 					<span>
 						<a href="#">
-							Lihat aplikasi 
+							Lihat aplikasi
 							<i class="fas fa-arrow-right"></i>
 						</a>
 					</span>
@@ -371,7 +373,7 @@
 					<h3>Aplikasi 2</h3>
 					<span>
 						<a href="#">
-							Lihat aplikasi 
+							Lihat aplikasi
 							<i class="fas fa-arrow-right"></i>
 						</a>
 					</span>
@@ -383,7 +385,7 @@
 					<h3>Aplikasi 3</h3>
 					<span>
 						<a href="#">
-							Lihat aplikasi 
+							Lihat aplikasi
 							<i class="fas fa-arrow-right"></i>
 						</a>
 					</span>
@@ -395,16 +397,16 @@
 					<h3>Aplikasi 4</h3>
 					<span>
 						<a href="#">
-							Lihat aplikasi 
+							Lihat aplikasi
 							<i class="fas fa-arrow-right"></i>
 						</a>
 					</span>
-				</div> 
+				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
-				<a href="<?= base_url('landingpage/produk'); ?>" class="btn btn-2">Selengkapnya</a>
+				<a href="<?= base_url('landingpage/produk'); ?>" class="btn btn-2 text-uppercase">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -530,7 +532,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
-				<a href="<?= base_url('landingpage/artikel'); ?>" class="btn btn-2">Selengkapnya</a>
+				<a href="<?= base_url('landingpage/artikel'); ?>" class="btn btn-2 text-uppercase">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -554,12 +556,12 @@
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 02.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 2">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 02.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 2">
 					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 02.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 03.jpg"  data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 3">
+				<a href="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 03.jpg" data-lightbox="Foto Kegiatan GARIS V" data-title="My caption 3">
 					<img src="<?= base_url(); ?>assets/dist/img/galeri/Kegiatan 03.jpg" class="art img-fluid" alt="">
 				</a>
 			</div>
@@ -591,7 +593,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
-				<a href="#" class="btn btn-2">Selengkapnya</a>
+				<a href="#" class="btn btn-2 text-uppercase">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -646,7 +648,7 @@
 								</p>
 							</div>
 						</div>
-						</div>
+					</div>
 					<div class="accordion-item">
 						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
 							<h3>Mahasiswa semester berapa yang boleh bergabung GARIS V ?</h3>
@@ -751,7 +753,7 @@
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
-								<button type="submit" class="btn btn-2">Kirim Pesan</button>
+								<button type="submit" class="btn btn-2 text-uppercase">Kirim Pesan</button>
 							</div>
 						</div>
 					</form>
@@ -760,10 +762,30 @@
 		</div>
 		<!-- <div class="row"> -->
 		<div class="maps-garis">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.447014458154!2d113.7206995141587!3d-8.157636583982516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b68d87fb43%3A0xabe23a31a78289d3!2sJurusan%20Teknologi%20Informasi%2C%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1619098235812!5m2!1sid!2sid" 
-			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.447014458154!2d113.7206995141587!3d-8.157636583982516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b68d87fb43%3A0xabe23a31a78289d3!2sJurusan%20Teknologi%20Informasi%2C%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1619098235812!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 		<!-- </div> -->
 	</div>
 </section>
 <!-- End Kontak -->
+
+<!-- Modal -->
+<div class="modal fade" id="applyform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg bg-main-color">
+		<div class="modal-content">
+			<div class="modal-header bg-main-color text-white">
+				<h5 class="modal-title font-weight-bolder" id="exampleModalLabel">Form Pendaftaran Projek</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span class="text-white" aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-1 text-uppercase" data-dismiss="modal">Batal</button>
+				<button type="button" class="btn btn-2 text-uppercase">Kirim</button>
+			</div>
+		</div>
+	</div>
+</div>

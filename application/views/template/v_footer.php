@@ -60,7 +60,8 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<p class="copyright-text">&copy; 2021 Grup Riset dan Keahlian V Kecerdasan Buatan JTI - Politeknik Negeri Jember<p>
+				<p class="copyright-text">&copy; 2021 Grup Riset dan Keahlian V Kecerdasan Buatan JTI - Politeknik Negeri Jember
+				<p>
 			</div>
 		</div>
 	</div>
@@ -68,7 +69,7 @@
 <!-- End Footer -->
 
 <!-- Start Scroll to top -->
-<div class='ignielToTop'/>
+<div class='ignielToTop' />
 <!-- End Scroll to top -->
 
 <!-- jquery js -->
@@ -85,13 +86,35 @@
 <script src="<?= base_url(); ?>assets/dist/js/main.js"></script>
 <!-- Lightbox popup js -->
 <!-- <script src="js/lightbox-plus-jquery.js"></script> -->
+<!-- Sweetalert 2 -->
+<script src="<?= base_url(); ?>assets/dist/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+<script>
+	function join() {
+		const swalBtnBootstrap = Swal.mixin({
+			customClass: {
+				confirmButton: 'btn btn-2'
+			},
+			buttonsStyling: false
+		}); 
+
+		swalBtnBootstrap.fire({
+			title: 'Join With Us!',
+			text: 'Bergabung bersama kami, dengan cara apply project dari beberapa dosen',
+			icon: 'info',
+			// showConfirmButton: false,
+			showCloseButton: true,
+			confirmButtonText: 'JOIN SEKARANG!'	
+		});
+	}
+</script>
+
 <!-- DataTables -->
 <script src="<?= base_url(); ?>assets/dist/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?= base_url(); ?>assets/dist/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= base_url(); ?>assets/dist/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url(); ?>assets/dist/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script>
-	$(function () {
+	$(function() {
 		$("#table-1").DataTable({
 			"responsive": true,
 			"autoWidth": false,
@@ -113,32 +136,41 @@
 <script>
 	$(document).scroll(function() {
 		return $(document).scrollTop() > 300 ? $('.ignielToTop').addClass('show') : $('.ignielToTop').removeClass('show')
-		}), $('.ignielToTop').click(function() {
-			return $('html,body').animate({
-				scrollTop: '0'
-			});
+	}), $('.ignielToTop').click(function() {
+		return $('html,body').animate({
+			scrollTop: '0'
+		});
 	});
 </script>
 <!-- Scroll to top javascript -->
 
 <!-- GetButton.io widget -->
 <script type="text/javascript">
-	(function () {
-			var options = {
-					whatsapp: "+628978333856", // WhatsApp number
-					email: "lab.rsi.jti@polije.ac.id", // Email
-					call_to_action: "Ada pertanyaan ?", // Call to action
-					button_color: "#467FCF", // Color of button
-					position: "right", // Position may be 'right' or 'left'
-					order: "whatsapp,email", // Order of buttons
-			};
-			var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+	(function() {
+		var options = {
+			whatsapp: "+628978333856", // WhatsApp number
+			email: "lab.rsi.jti@polije.ac.id", // Email
+			call_to_action: "Ada pertanyaan ?", // Call to action
+			button_color: "#467FCF", // Color of button
+			position: "right", // Position may be 'right' or 'left'
+			order: "whatsapp,email", // Order of buttons
+		};
+		var proto = document.location.protocol,
+			host = "getbutton.io",
+			url = proto + "//static." + host;
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = url + '/widget-send-button/js/init.js';
+		s.onload = function() {
+			WhWidgetSendButton.init(host, proto, options);
+		};
+		var x = document.getElementsByTagName('script')[0];
+		x.parentNode.insertBefore(s, x);
 	})();
 </script>
 <!-- /GetButton.io widget -->
 
 </body>
+
 </html>

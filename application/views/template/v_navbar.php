@@ -43,7 +43,7 @@
 				<a class="nav-link" href="#" data-scroll-nav="8">Kontak</a>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-sm-2 login-btn" href="<?= base_url('auth/login'); ?>">Login</a>
+				<a class="btn btn-sm-2 login-btn text-uppercase" href="<?= base_url('auth/login'); ?>">Login</a>
 			</li>
 			</ul>
 		</div>
