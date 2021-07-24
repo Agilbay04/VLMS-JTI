@@ -43,21 +43,40 @@
                                 <label for="exampleInputEmail1">Bidang</label>
                                 <input type="text" class="form-control" name="bidang" value="<?= $anggota[0]->bidang ?>" placeholder="Masukkan Bidang Keahlian">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Kelompok</label>
-                                <select name="kelompok" id="" class="form-control">
-                                    <option value="<?= $anggota[0]->id_grup; ?>" selected><?= $anggota[0]->nama_grup; ?></option>
-                                    <?php foreach ($kelompok as $kelompoks) {
-                                        if ($anggota[0]->id_grup !== $kelompoks->id_grup) {
-                                    ?>
-                                            <option value="<?= $kelompoks->id_grup ?>"><?= $kelompoks->nama_grup; ?></option>
-                                    <?php }
-                                    } ?>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Status</label>
-                                <input type="text" class="form-control" name="status" id="exampleInputEmail1" value="<?= $anggota[0]->status ?>" aria-describedby="emailHelp" placeholder="Masukkan Status Anggota">
+
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Kelompok</label>
+                                    <select name="kelompok" id="" class="form-control">
+                                        <option value="<?= $anggota[0]->id_grup; ?>" selected><?= $anggota[0]->nama_grup; ?></option>
+                                        <?php foreach ($kelompok as $kelompoks) {
+                                            if ($anggota[0]->id_grup !== $kelompoks->id_grup) {
+                                        ?>
+                                                <option value="<?= $kelompoks->id_grup ?>"><?= $kelompoks->nama_grup; ?></option>
+                                        <?php }
+                                        } ?>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Aktif</label>
+                                    <select name="aktif" id="" class="form-control">
+                                        <?php if ($anggota[0]->is_active == '0') { ?>
+                                            <option value="0" selected>Non Aktif</option>
+                                            <option value="1">Aktif</option>
+                                        <?php } else if ($anggota[0]->is_active == '1') { ?>
+                                            <option value="0">Non Aktif</option>
+                                            <option value="1" selected>Aktif</option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Status</label>
+                                    <input type="text" class="form-control" name="status" value="<?= $anggota[0]->status ?>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Status Anggota">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Password</label>
+                                    <input type="password" class="form-control" name="password" placeholder="Masukkan Password Anggota" value="<?= $anggota[0]->password ?>">
+                                </div>
                             </div>
                             <div class="text-right">
                                 <button class="btn btn-danger mr-3">Cancel</button>

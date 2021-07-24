@@ -39,6 +39,7 @@
                                         <th>No Identitas</th>
                                         <th>Bidang</th>
                                         <th>Status</th>
+                                        <th>Aktif</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -52,6 +53,12 @@
                                             <td><?= $anggotas->no_identitas; ?></td>
                                             <td><?= $anggotas->bidang ?></td>
                                             <td><?= $anggotas->status; ?></td>
+                                            <td><?php if ($anggotas->is_active == '1') { ?>
+                                                    <span class="badge badge-success">Aktif</span>
+                                                <?php } else if ($anggotas->is_active == '0') { ?>
+                                                    <span class="badge badge-danger">Non-Aktif</span>
+                                                <?php } ?>
+                                            </td>
                                             <td>
                                                 <a href="<?= base_url('admin/anggota/edit/') . $anggotas->id_anggota ?>" class="btn btn-primary mx-3">Edit</a>
                                                 <a href="" class="btn btn-danger">Hapus</a>

@@ -53,3 +53,4 @@ $route['default_controller'] = '';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['admin/repositori/(:any)'] = 'admin/Repositori/grup/$1';
+$route['admin'] = 'login';

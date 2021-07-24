@@ -8,7 +8,7 @@ class Login extends CI_Controller
     }
     public function index()
     {
-        $this->load->view('login');
+        $this->load->view('auth/v_login_admin');
     }
     function aksi_login()
     {
@@ -22,15 +22,14 @@ class Login extends CI_Controller
         if (!empty($cek)) {
 
             $data_session = array(
-                'nama' => $username,
+                'nama' => $cek[0]->nama_anggota,
                 'status' => "login"
             );
 
             $this->session->set_userdata($data_session);
 
             print_r($data_session);
-            // redirect(base_url("admin"));
-
+            redirect(base_url("admin/anggota"));
         } else {
             echo "Username dan password salah !";
         }
