@@ -50,12 +50,10 @@ class Dokumentasi extends CI_Controller
     {
         $gambar = $_FILES['gambar']['name'];
         if (empty($gambar)) {
-            $nama = $this->input->post('nama');
-            $bidang = $this->input->post('bidang');
-            $status = $this->input->post('status');
+            $deskripsi = $this->input->post('deskripsi');
             $kelompok = $this->input->post('kelompok');
-            $data = ['bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok];
-            $this->M_admin->updatedata('dokumentasi', ['id_anggota' =>  $this->input->post('kode')], $data);
+            $data = ['deskripsi' => $deskripsi, 'id_grup' => $kelompok];
+            $this->M_admin->updatedata('dokumentasi', ['id_dokumentasi' =>  $this->input->post('kode')], $data);
             redirect(base_url('admin/dokumentasi/'));
         } else {
             $config = [
@@ -69,16 +67,14 @@ class Dokumentasi extends CI_Controller
             if (!$this->upload->do_upload('gambar')) {
                 $error = array('error' => $this->upload->display_errors());
                 $this->session->set_flashdata('error', $error['error']);
-                redirect(base_url('admin/pembicara/'));
+                redirect(base_url('admin/dokumentasi/'));
             } else {
                 $file = $this->upload->data();
-                $nama = $this->input->post('nama');
-                $bidang = $this->input->post('bidang');
-                $status = $this->input->post('status');
+                $deskripsi = $this->input->post('deskripsi');
                 $kelompok = $this->input->post('kelompok');
-                $data = ['gambar' => $file['file_name'], 'bidang' => $bidang, 'nama_anggota' => $nama, 'status' => $status, 'id_grup' => $kelompok];
-                $this->M_admin->updatedata('dokumentasi', ['id_anggota' =>  $this->input->post('kode')], $data);
-                redirect(base_url('admin/pembicara/'));
+                $data = ['gambar' => $file['file_name'], 'deskripsi' => $deskripsi, 'id_grup' => $kelompok];
+                $this->M_admin->updatedata('dokumentasi', ['id_dokumentasi' =>  $this->input->post('kode')], $data);
+                redirect(base_url('admin/dokumentasi/'));
             }
         }
     }
