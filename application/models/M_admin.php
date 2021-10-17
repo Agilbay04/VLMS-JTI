@@ -37,4 +37,8 @@ class M_admin extends CI_Model
             ->join('grup_penelitian', 'artikel.id_grup= grup_penelitian.id_grup')
             ->where('artikel.id', $id)->get()->result();
     }
+    public function login($tabel, $where)
+    {
+        return $this->db->get_where($tabel, $where)->first_row();
+    }
 }

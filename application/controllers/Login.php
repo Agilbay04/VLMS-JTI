@@ -15,14 +15,14 @@ class Login extends CI_Controller
         $username = $this->input->post('username');
         $password = $this->input->post('password');
         $where = array(
-            'no_identitas' => $username,
+            'username' => $username,
             'password' => md5($password)
         );
-        $cek = $this->M_admin->getwhere('anggota', $where);
+        $cek = $this->M_admin->login('user', $where);
         if (!empty($cek)) {
 
             $data_session = array(
-                'nama' => $cek[0]->nama_anggota,
+                'username' => $cek->username,
                 'status' => "login"
             );
 
@@ -37,6 +37,6 @@ class Login extends CI_Controller
     function logout()
     {
         $this->session->sess_destroy();
-        redirect(base_url('login'));
+        redirect(base_url('admin'));
     }
 }

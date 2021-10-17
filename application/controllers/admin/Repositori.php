@@ -6,6 +6,7 @@ class Repositori extends CI_Controller
     {
         parent::__construct();
         $this->load->model('M_admin');
+        is_logged_in();
     }
     public function grup($id)
     {
