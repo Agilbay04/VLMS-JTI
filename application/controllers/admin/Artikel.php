@@ -46,9 +46,10 @@ class Artikel extends CI_Controller
             $isi = $this->input->post('isi');
             $kelompok = $this->input->post('kelompok');
             $kategori = $this->input->post('kategori');
-            $data = ['gambar' => $file['file_name'], 'isi' => $isi, 'author' => $author, 'id_grup' => $kelompok, 'id_kategori' => $kategori, 'judul' => $judul];
+            $status = $this->input->post('status');
+            $data = ['gambar' => $file['file_name'], 'isi' => $isi, 'author' => $author, 'id_grup' => $kelompok, 'id_kategori' => $kategori, 'judul' => $judul, 'status_artikel' => $status];
             $this->M_admin->insertdata('artikel', $data);
-            redirect(base_url('admin/artikel/new'));
+            redirect(base_url('admin/artikel'));
         }
     }
     public function edit($id)
@@ -70,7 +71,8 @@ class Artikel extends CI_Controller
             $isi = $this->input->post('isi');
             $kelompok = $this->input->post('kelompok');
             $kategori = $this->input->post('kategori');
-            $data = ['isi' => $isi, 'author' => $author, 'id_grup' => $kelompok, 'id_kategori' => $kategori, 'judul' => $judul];
+            $status = $this->input->post('status');
+            $data = ['isi' => $isi, 'author' => $author, 'id_grup' => $kelompok, 'id_kategori' => $kategori, 'judul' => $judul, 'status_artikel' => $status];
             $this->M_admin->updatedata('artikel', ['id' =>  $this->input->post('kode')], $data);
             redirect(base_url('admin/artikel/'));
         } else {
@@ -91,7 +93,8 @@ class Artikel extends CI_Controller
                 $isi = $this->input->post('isi');
                 $kelompok = $this->input->post('kelompok');
                 $kategori = $this->input->post('kategori');
-                $data = ['gambar' => $file['file_name'], 'isi' => $isi, 'author' => $author, 'id_grup' => $kelompok, 'id_kategori' => $kategori, 'judul' => $judul];
+                $status = $this->input->post('status');
+                $data = ['gambar' => $file['file_name'], 'isi' => $isi, 'author' => $author, 'id_grup' => $kelompok, 'id_kategori' => $kategori, 'judul' => $judul, 'status_artikel' => $status];
                 $this->M_admin->updatedata('artikel', ['id' =>  $this->input->post('kode')], $data);
                 redirect(base_url('admin/pembicara/'));
             }

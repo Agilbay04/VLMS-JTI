@@ -73,6 +73,13 @@
                                     } ?>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Status</label>
+                                <select name="status" id="" class="form-control">
+                                    <option value="0">Arsip</option>
+                                    <option value="1">Publish</option>
+                                </select>
+                            </div>
                             <div class="text-right">
                                 <button class="btn btn-danger mr-3">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Save</button>

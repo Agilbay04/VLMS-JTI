@@ -81,6 +81,18 @@
                                     } ?>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Status</label>
+                                <select name="status" id="" class="form-control">
+                                    <?php if ($artikel[0]->status_artikel == 0) { ?>
+                                        <option value="0">Arsip</option>
+                                        <option value="1">Publish</option>
+                                    <?php } else if ($artikel[0]->status_artikel == 1) { ?>
+                                        <option value="1">Publish</option>
+                                        <option value="0">Arsip</option>
+                                    <?php } ?>
+                                </select>
+                            </div>
                             <div class="text-right">
                                 <button class="btn btn-danger mr-3">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Save</button>

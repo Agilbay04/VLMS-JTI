@@ -7,7 +7,7 @@
 					<h1>Grup Keahlian dan Riset V</h1>
 					<h2>Kecerdasan Buatan</h2>
 					<div class="dropdown-divider"></div>
-					<p>Laboratorium Rekayasa Sistem Informasi <br>
+					<p>Laboratorium <?= $profil->nama_lab; ?><br>
 						Jurusan Teknologi Informasi <br>
 						Politeknik Negeri Jember Kampus I Jember, Indonesia.
 					</p>
@@ -355,54 +355,20 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-7 col-lg-3">
-				<div class="produk-item">
-					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
-					<h3>Aplikasi 1</h3>
-					<span>
-						<a href="#">
-							Lihat aplikasi
-							<i class="fas fa-arrow-right"></i>
-						</a>
-					</span>
+			<?php foreach ($produk as $produks) : ?>
+				<div class="col-md-7 col-lg-3">
+					<div class="produk-item">
+						<img src="<?= base_url(); ?>/img/produk/<?= $produks->gambar ?>" alt="produk">
+						<h3><?= $produks->nama_produk; ?></h3>
+						<span>
+							<a href="#">
+								Lihat aplikasi
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</span>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-7 col-lg-3">
-				<div class="produk-item">
-					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
-					<h3>Aplikasi 2</h3>
-					<span>
-						<a href="#">
-							Lihat aplikasi
-							<i class="fas fa-arrow-right"></i>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="col-md-7 col-lg-3">
-				<div class="produk-item">
-					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
-					<h3>Aplikasi 3</h3>
-					<span>
-						<a href="#">
-							Lihat aplikasi
-							<i class="fas fa-arrow-right"></i>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="col-md-7 col-lg-3">
-				<div class="produk-item">
-					<img src="<?= base_url(); ?>assets/dist/img/produk.jpg" alt="produk">
-					<h3>Aplikasi 4</h3>
-					<span>
-						<a href="#">
-							Lihat aplikasi
-							<i class="fas fa-arrow-right"></i>
-						</a>
-					</span>
-				</div>
-			</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="row justify-content-center">
 			<div class="produk-btn">
@@ -424,118 +390,49 @@
 			</div>
 		</div>
 		<div class="row justify-content-center">
-			<div class="col-lg-4 col-md-6">
-				<div class="fitur-item">
-					<div class="populer-card-detail mb-2">
-						<div class="meta">
-							<div class="photo" style="background-image: url(<?= base_url(); ?>assets/dist/img/artikel.jpg)"></div>
-							<ul class="details">
-								<li class="author">
-									<a href="#">
-										<i class="fas fa-user"></i>
-										M. Angga Gumilang
-									</a>
-								</li>
-								<li class="date">
-									<i class="fas fa-calendar"></i>
-									22 Okt 2021
-								</li>
-								<li class="tags">
-									<ul>
-										<i class="fas fa-tag"></i>
-										<li><a href="#">Hiburan</a></li>
-										<li><a href="#">Heboh</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="description">
-							<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
-							<!-- <h2>Opening a door to the future</h2> -->
-							<p class="read-more">
-								<a class="text-decoration-none" href="pages/det_artikel.html">Baca</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="fitur-item">
-					<div class="populer-card-detail mb-2">
-						<div class="meta">
-							<div class="photo" style="background-image: url(<?= base_url(); ?>assets/dist/img/jurnal.jpg)"></div>
-							<ul class="details">
-								<li class="author">
-									<a href="#">
-										<i class="fas fa-user"></i>
-										M. Angga Gumilang
-									</a>
-								</li>
-								<li class="date">
-									<i class="fas fa-calendar"></i>
-									22 Okt 2021
-								</li>
-								<li class="tags">
-									<ul>
-										<i class="fas fa-tag"></i>
-										<li><a href="#">Hiburan</a></li>
-										<li><a href="#">Heboh</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="description">
-							<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
-							<!-- <h2>Opening a door to the future</h2> -->
-							<p class="read-more">
-								<a class="text-decoration-none" href="#">Baca</a>
-							</p>
+			<?php foreach ($artikel as $index => $artikels) : ?>
+				<div class="col-lg-4 col-md-6">
+					<div class="fitur-item">
+						<div class="populer-card-detail mb-2">
+							<div class="meta">
+								<div class="photo" style="background-image: url(<?= base_url(); ?>/img/artikel/<?= $artikels->gambar ?>)"></div>
+								<ul class="details">
+									<li class="author">
+										<a href="#">
+											<i class="fas fa-user"></i>
+											<?= $artikels->nama_anggota ?>
+										</a>
+									</li>
+									<li class="date">
+										<i class="fas fa-calendar"></i>
+										22 Okt 2021
+									</li>
+									<li class="tags">
+										<ul>
+											<i class="fas fa-tag"></i>
+											<li><a href="#"><?= $artikels->nama_kategori ?></a></li>
+											<li><a href="#">Heboh</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="description">
+								<h1><?= $artikels->judul ?></h1>
+								<!-- <h2>Opening a door to the future</h2> -->
+								<p class="read-more">
+									<a class="text-decoration-none" href="pages/det_artikel.html">Baca</a>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="fitur-item">
-					<div class="populer-card-detail mb-2">
-						<div class="meta">
-							<div class="photo" style="background-image: url(<?= base_url(); ?>assets/dist/img/artikel.jpg)"></div>
-							<ul class="details">
-								<li class="author">
-									<a href="#">
-										<i class="fas fa-user"></i>
-										M. Angga Gumilang
-									</a>
-								</li>
-								<li class="date">
-									<i class="fas fa-calendar"></i>
-									22 Okt 2021
-								</li>
-								<li class="tags">
-									<ul>
-										<i class="fas fa-tag"></i>
-										<li><a href="#">Hiburan</a></li>
-										<li><a href="#">Heboh</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="description">
-							<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cupiditate...</h1>
-							<!-- <h2>Opening a door to the future</h2> -->
-							<p class="read-more">
-								<a class="text-decoration-none" href="#">Baca</a>
-							</p>
-						</div>
-					</div>
+				</div><?php endforeach; ?>
+
+			<div class="row justify-content-center">
+				<div class="produk-btn">
+					<a href="<?= base_url('landingpage/artikel'); ?>" class="btn btn-2 text-uppercase">Selengkapnya</a>
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div class="produk-btn">
-				<a href="<?= base_url('landingpage/artikel'); ?>" class="btn btn-2 text-uppercase">Selengkapnya</a>
-			</div>
-		</div>
-	</div>
 </section>
 <!-- End Artikel -->
 
@@ -613,54 +510,21 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
 				<div id="accordion">
-					<div class="accordion-item">
-						<div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
-							<h3>Bagaimana cara bergabung menjadi member GARIS V ?</h3>
-						</div>
-						<div class="collapse show" id="collapse-01" data-parent="#accordion">
-							<div class="accordion-body">
-								<p>
-									Tinggal pilih project yang tersedia dan isi form apply
-								</p>
+					<?php foreach ($faq as $index => $faqs) : ?>
+						<div class="accordion-item">
+							<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-<?= $index ?>">
+								<h3><?= $faqs->pertanyaan; ?></h3>
+							</div>
+							<div class="collapse" id="collapse-<?= $index ?>" data-parent="#accordion">
+								<div class="accordion-body">
+									<p>
+										Tinggal pilih project yang tersedia dan isi form apply
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
-							<h3>Apakah ada persyaratan khusus untuk bergabung menjadi member GARIS V ?</h3>
-						</div>
-						<div class="collapse" id="collapse-02" data-parent="#accordion">
-							<div class="accordion-body">
-								<p>
-									Persyaratan khusus tergantung dari masing-masing pemilik project, silahkan hubungi dosen yang bersangkutan!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
-							<h3>Bolehkah mahasiswa mengambil lebih dari 1 projek sekaligus?</h3>
-						</div>
-						<div class="collapse" id="collapse-03" data-parent="#accordion">
-							<div class="accordion-body">
-								<p>
-									Bisa, namun alangkah lebih baik jika mahasiswa hanya tergabung dalam 1 project pada waktu yang bersamaan
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
-							<h3>Mahasiswa semester berapa yang boleh bergabung GARIS V ?</h3>
-						</div>
-						<div class="collapse" id="collapse-04" data-parent="#accordion">
-							<div class="accordion-body">
-								<p>
-									Mahasiswa aktif, dari Kampus Utama Polije maupun Kampus PSDKU Polije bisa mendaftar di masing-masing lab yang tersedia di JTI Polije.
-								</p>
-							</div>
-						</div>
-					</div>
+					<?php endforeach; ?>
+
 				</div>
 			</div>
 		</div>
@@ -688,29 +552,28 @@
 						<i class="fas fa-location-arrow"></i>
 						<h4>Lokasi</h4>
 						<p>
-							Gedung Jurusan Teknologi Informasi, Politeknik Negeri Jember , Lingkungan Panji, Tegalgede,
-							Kec. Kaliwates, Kabupaten Jember, Jawa Timur 68124
+							<?= $profil->lokasi; ?>
 						</p>
 					</div>
 					<div class="kontak-info-item">
 						<i class="fas fa-envelope"></i>
 						<h4>Email</h4>
 						<p>
-							lab.rsi.jti@polije.ac.id
+							<?= $profil->email; ?>
 						</p>
 					</div>
 					<div class="kontak-info-item">
 						<i class="fas fa-phone"></i>
 						<h4>Nomor Telepon</h4>
 						<p>
-							0331-333532
+							<?= $profil->no_hp; ?>
 						</p>
 					</div>
 					<div class="kontak-info-item">
 						<i class="fas fa-fax"></i>
 						<h4>Fax</h4>
 						<p>
-							0331-333531
+							<?= $profil->fax; ?>
 						</p>
 					</div>
 				</div>
@@ -780,7 +643,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				
+
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-1 text-uppercase" data-dismiss="modal">Batal</button>
